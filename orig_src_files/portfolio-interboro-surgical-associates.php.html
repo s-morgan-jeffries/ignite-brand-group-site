@@ -1,0 +1,465 @@
+<html>
+<head>
+<link rel="SHORTCUT ICON" href="logo.ico"/>
+<title>Interboro Surgical Associates | Ignite Brand Group</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Multi-specialty group of board certified physicians focusing on thoracic and vascular surgery with offices across New York City">
+<meta name="keywords" content="">
+
+
+
+<!--------- Facebox Starts-------------------------->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="facebox/facebox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage : 'facebox/loading.gif',
+            closeImage   : 'facebox/closelabel.png'
+        })
+    })
+</script>
+
+
+<script type="text/javascript">
+
+    function update_page($page){
+        document.getElementById('page').value = $page;
+    }
+
+    function do_it($pageIncrement ){
+
+        var tx = jQuery.noConflict();
+        $page = document.getElementById('page').value * 1.0 + $pageIncrement;
+
+        tx.ajax({
+            url     : 'search_res.php?page='+$page,
+            type    : 'POST',
+            data    : tx('#search_form').serialize(),
+            success : function( data ) {
+                tx('#search_result').html("<h1>"+data+"</h1>");
+                update_page($page);
+            },
+            error   : function( xhr, err ) {
+                alert('Error :: Service not available right now!');
+            }
+        });
+        return false;
+    }
+    function reset_page(){
+        document.getElementById('page').value = 0;
+    }
+
+</script>
+
+<!--------- Facebox Ends-------------------------->
+
+<meta name="copyright" content="Copyright 2013 © Ignite Brand Group, LLC">
+<meta name="author" content="Ignite Brand Group, LLC">
+<meta name="email" content="info@ignitebrandgroup.com">
+
+
+<!--THIS DESCRIBES CSS FOR STYLESHEET-->
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<!--END OF SCRIPT FOR CSS STYLESHEET-->
+
+
+<!--THIS DESCRIBES SCRIPT FOR HIGHLIGHTING BUTTONS-->
+<script language="javascript">
+<!-- hide script from old browsers
+
+//detect browser:
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if (browserName == "Netscape" && browserVer >= 3) browserVer = "1";
+else if (browserName == "Microsoft Internet Explorer" && browserVer == 4) browserVer = "1";
+else browserVer = "2";
+
+//preload images:
+if (browserVer == 1) {
+mhom = new Image(170,50);
+mhom.src = "images/mhom.png";
+mhomx = new Image(170,50);
+mhomx.src = "images/mhomx.png"
+
+msr = new Image(40,40);
+msr.src = "images/msr.png";
+msrx = new Image(40,40);
+msrx.src = "images/msrx.png"
+mtw = new Image(40,40);
+mtw.src = "images/mtw.png";
+mtwx = new Image(40,40);
+mtwx.src = "images/mtwx.png"
+mfb = new Image(40,40);
+mfb.src = "images/mfb.png";
+mfbx = new Image(40,40);
+mfbx.src = "images/mfbx.png"
+mli = new Image(40,40);
+mli.src = "images/mli.png";
+mlix = new Image(40,40);
+mlix.src = "images/mlix.png"
+myt = new Image(40,40);
+myt.src = "images/myt.png";
+mytx = new Image(40,40);
+mytx.src = "images/mytx.png"
+mis = new Image(40,40);
+mis.src = "images/mis.png";
+misx = new Image(40,40);
+misx.src = "images/misx.png"
+
+abt0 = new Image(150,35);
+abt0.src = "images/abt0.png";
+abt0x = new Image(150,35);
+abt0x.src = "images/abt0x.png"
+abt1 = new Image(150,35);
+abt1.src = "images/abt1.png";
+abt1x = new Image(150,35);
+abt1x.src = "images/abt1x.png"
+abt2 = new Image(150,35);
+abt2.src = "images/abt2.png";
+abt2x = new Image(150,35);
+abt2x.src = "images/abt2x.png"
+abt3 = new Image(150,35);
+abt3.src = "images/abt3.png";
+abt3x = new Image(150,35);
+abt3x.src = "images/abt3x.png"
+abt4 = new Image(150,35);
+abt4.src = "images/abt4.png";
+abt4x = new Image(150,35);
+abt4x.src = "images/abt4x.png"
+
+srv0 = new Image(150,35);
+srv0.src = "images/srv0.png";
+srv0x = new Image(150,35);
+srv0x.src = "images/srv0x.png"
+srv1 = new Image(150,35);
+srv1.src = "images/srv1.png";
+srv1x = new Image(150,35);
+srv1x.src = "images/srv1x.png"
+srv2 = new Image(150,35);
+srv2.src = "images/srv2.png";
+srv2x = new Image(150,35);
+srv2x.src = "images/srv2x.png"
+srv3 = new Image(150,35);
+srv3.src = "images/srv3.png";
+srv3x = new Image(150,35);
+srv3x.src = "images/srv3x.png"
+
+pabk = new Image(300,200);
+pabk.src = "images/pabk.png";
+pabkx = new Image(300,200);
+pabkx.src = "images/pabkx.png"
+plvg = new Image(300,200);
+plvg.src = "images/plvg.png";
+plvgx = new Image(300,200);
+plvgx.src = "images/plvgx.png"
+palm = new Image(300,200);
+palm.src = "images/palm.png";
+palmx = new Image(300,200);
+palmx.src = "images/palmx.png"
+pvbl = new Image(300,200);
+pvbl.src = "images/pvbl.png";
+pvblx = new Image(300,200);
+pvblx.src = "images/pvblx.png"
+pfvc = new Image(300,200);
+pfvc.src = "images/pfvc.png";
+pfvcx = new Image(300,200);
+pfvcx.src = "images/pfvcx.png"
+psld = new Image(300,200);
+psld.src = "images/psld.png";
+psldx = new Image(300,200);
+psldx.src = "images/psldx.png"
+pbvc = new Image(300,200);
+pbvc.src = "images/pbvc.png";
+pbvcx = new Image(300,200);
+pbvcx.src = "images/pbvcx.png"
+pfmc = new Image(300,200);
+pfmc.src = "images/pfmc.png";
+pfmcx = new Image(300,200);
+pfmcx.src = "images/pfmcx.png"
+pisa = new Image(300,200);
+pisa.src = "images/pisa.png";
+pisax = new Image(300,200);
+pisax.src = "images/pisax.png"
+pcgs = new Image(300,200);
+pcgs.src = "images/pcgs.png";
+pcgsx = new Image(300,200);
+pcgsx.src = "images/pcgsx.png"
+pwpv = new Image(300,200);
+pwpv.src = "images/pwpv.png";
+pwpvx = new Image(300,200);
+pwpvx.src = "images/pwpvx.png"
+pvva = new Image(300,200);
+pvva.src = "images/pvva.png";
+pvvax = new Image(300,200);
+pvvax.src = "images/pvvax.png"
+
+ctw = new Image(40,40);
+ctw.src = "images/ctw.png";
+ctwx = new Image(40,40);
+ctwx.src = "images/ctwx.png"
+cfb = new Image(40,40);
+cfb.src = "images/cfb.png";
+cfbx = new Image(40,40);
+cfbx.src = "images/cfbx.png"
+cli = new Image(40,40);
+cli.src = "images/cli.png";
+clix = new Image(40,40);
+clix.src = "images/clix.png"
+cyt = new Image(40,40);
+cyt.src = "images/cyt.png";
+cytx = new Image(40,40);
+cytx.src = "images/cytx.png"
+}
+
+//image swapping function:
+function hiLite(imgDocID, imgObjName, comment) {
+if (browserVer == 1) {
+document.images[imgDocID].src = eval(imgObjName + ".src");
+window.status = comment; return true;
+}}
+//end hiding -->
+</script>
+<!--END OF SCRIPT FOR HIGHLIGHTING BUTTONS-->
+
+
+<!--THIS DESCRIBES SCRIPT FOR DYNAMIC MENU BAR-->
+<link rel="stylesheet" type="text/css" href="menu/flexdropdown.css" />
+
+<script type="text/javascript" src="menu/flexdropdown.js">
+</script>
+<!--END OF SCRIPT FOR DYNAMIC MENU BAR-->
+
+
+<!--THIS DESCRIBES SCRIPT FOR GOOGLE TRACKING-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31238567-1', 'ignitebrandgroup.com');
+  ga('send', 'pageview');
+
+</script>
+<!--END OF SCRIPT FOR GOOGLE TRACKING-->
+
+<!--SCRIPT FOR CONTROLLED SLIDESHOW-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<style type="text/css"></style>
+<script type="text/javascript" src="portfolio/simplegallery.js"></script>
+<script type="text/javascript">
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery1", //ID of main gallery container,
+	dimensions: [1000, 500], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+	imagearray: [
+		["images/portfolio-interboro-surgical-associates-01.jpg", "", "", ""],
+		["images/portfolio-interboro-surgical-associates-02.jpg", "", "", ""],
+		["images/portfolio-interboro-surgical-associates-03.jpg", "", "", ""],
+		["images/portfolio-interboro-surgical-associates-04.jpg", "", "", ""],
+		["images/portfolio-interboro-surgical-associates-05.jpg", "", "", ""],
+		["images/portfolio-interboro-surgical-associates-06.jpg", "", "", ""]
+	],
+	autoplay: [true, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	oninit:function(){ //event that fires when gallery has initialized/ ready to run
+		//Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+	},
+	onslide:function(curslide, i){ //event that fires after each slide is shown
+		//Keyword "this": references current gallery instance
+		//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+		//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+	}
+})
+</script>
+<!--END OF CONTROLLED SLIDESHOW-->
+
+
+</head>
+
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<div class="header">
+<table width="100%" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+	<tr width="100%">
+		<td width="100%" height="100" align="center" valign="top">
+		<table width="100%" height="100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
+			<td width="5%"></td>
+
+			<td width="20%" align="left" valign="center">
+			<a href="index.php.html" onMouseOver="hiLite('mhom','mhomx','')" onMouseOut="hiLite('mhom','mhom','')"><img name="mhom" src="images/mhom.png" valign="top" border="0" width="170" height="50" alt="Home"/></a>
+			</td>
+		
+			<td width="70%" align="right" valign="center">
+			<h2>
+			<a href="who-we-are.php.html" data-flexmenu="flexmenu1"><font color="#5f5b59">ABOUT</font></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="what-we-do.php.html" data-flexmenu="flexmenu2"><font color="#5f5b59">SERVICES</font></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="news.php.html"><font color="#5f5b59">NEWS</font></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="http://www.talkingoranges.com/" target="blank"><font color="#5f5b59">BLOG</font></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="faq.php.html"><font color="#5f5b59">FAQ</font></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="contact-us.php.html"><font color="#5f5b59">CONTACT US</font></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="search.php.html" rel="facebox" onMouseOver="hiLite('msr','msrx','')" onMouseOut="hiLite('msr','msr','')"><img name="msr" src="images/msr.png" valign="bottom" border="0" width="25" height="25" alt="Search"/></a>
+			&nbsp;
+			<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" onMouseOver="hiLite('mli','mlix','')" onMouseOut="hiLite('mli','mli','')"><img name="mli" src="images/mli.png" valign="bottom" border="0" width="25" height="25" alt="Ignite Brand Group on LinkedIn"/></a>	
+			&nbsp;
+			<a href="https://twitter.com/ignitebrand" target="blank" onMouseOver="hiLite('mtw','mtwx','')" onMouseOut="hiLite('mtw','mtw','')"><img name="mtw" src="images/mtw.png" valign="bottom" border="0" width="25" height="25" alt="Ignite Brand Group on Twitter"/></a>
+			&nbsp;
+			<a href="http://www.youtube.com/user/IgniteBrandGroup" target="blank" onMouseOver="hiLite('myt','mytx','')" onMouseOut="hiLite('myt','myt','')"><img name="myt" src="images/myt.png" valign="bottom" border="0" width="25" height="25" alt="Ignite Brand Group on YouTube"/></a>
+			&nbsp;
+			<a href="https://www.facebook.com/IgniteBrandGroup" target="blank" onMouseOver="hiLite('mfb','mfbx','')" onMouseOut="hiLite('mfb','mfb','')"><img name="mfb" src="images/mfb.png" valign="bottom" border="0" width="25" height="25" alt="Ignite Brand Group on Facebook"/></a>
+			&nbsp;
+			<a href="http://www.insidestartups.org/ignite-brand-group-llc" target="blank" onMouseOver="hiLite('mis','misx','')" onMouseOut="hiLite('mis','mis','')"><img name="mis" src="images/mis.png" valign="bottom" border="0" width="25" height="25" alt="Ignite Brand Group on Inside Startups"/></a>
+			</h2>
+
+			<!--HTML FOR ABOUT DROPDOWN MENU-->
+			<ul id="flexmenu1" class="flexdropdownmenu">
+			<li><a href="who-we-are.php.html">WHO WE ARE</a></li>
+			<li><a href="why-we-work.php.html">WHY WE WORK</a></li>
+			<li><a href="what-we-believe.php.html">WHAT WE BELIEVE</a></li>
+			<li><a href="work-with-us.php.html">WORK WITH US</a></li>
+			</ul>
+			<!--END OF HTML FOR ABOUT DROPDOWN MENU-->
+
+			<!--HTML FOR SERVICES DROPDOWN MENU-->
+			<ul id="flexmenu2" class="flexdropdownmenu">
+			<li><a href="what-we-do.php.html">WHAT WE DO</a></li>
+			<li><a href="how-we-work.php.html">HOW WE WORK</a></li>
+			<li><a href="portfolio.php.html">PORTFOLIO</a></li>
+			</ul>
+			<!--END OF HTML FOR ABOUT DROPDOWN MENU-->
+			</td>
+
+			<td width="5%"></td>
+		</tr></table>
+		</td>
+	</tr>
+</table>
+</div>
+
+
+<table width="100%" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+	<tr width="100%">
+		<td width="100%" height="100" align="center" valign="top"></td>
+	</tr>
+</table>
+
+<table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+
+	<tr width="1100">
+		<td width="50"></td>
+
+		<td width="1000" align="left" valign="top">
+		<br/>
+		<h1><a href="portfolio.php.html">Portfolio</a></h1>
+
+
+		<a href="portfolio.php.html" onMouseOver="hiLite('srv3','srv3x','')" onMouseOut="hiLite('srv3','srv3','')"><img name="srv3" src="images/srv3.png" valign="top" align="right" border="0" width="129" height="30" alt="Portfolio"/></a><a href="how-we-work.php.html" onMouseOver="hiLite('srv1','srv1x','')" onMouseOut="hiLite('srv1','srv1','')"><img name="srv1" src="images/srv1.png" valign="top" align="right" border="0" width="129" height="30" alt="How We Work"/></a><a href="what-we-do.php.html" onMouseOver="hiLite('srv2','srv2x','')" onMouseOut="hiLite('srv2','srv2','')"><img name="srv2" src="images/srv2.png" valign="top" align="right" border="0" width="129" height="30" alt="What We Do"/></a>
+<br/><br/>
+		
+		<div id="simplegallery1"></div>
+		</td>
+
+		<td width="50"></td>
+	</tr>
+
+
+	<tr width="1100">
+		<td colspan="3" width="1100" height="50"></td>
+	</tr>
+
+
+	<tr width="1100">
+		<td width="50"></td>
+
+		<td width="1000" align="left" valign="top">
+		<img src="images/page-line.png" width="1000" height="25" border="0" alt=""/>
+		<h1>Interboro Surgical Associates</h1>
+		<br/>
+		<table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="20"></td>
+
+				<td width="150" align="left" valign="top">
+				<h4>Who They Are</h4>
+				</td>
+
+				<td width="50"></td>
+
+				<td width="650" align="left" valign="top">
+				<ul>
+					<li><span>Multi-specialty group of board certified physicians focusing on thoracic and vascular surgery with offices across New York City</span></li>
+				<ul>
+				<br/>
+				</td>
+
+				<td width="130"></td>
+			</tr>
+
+			<tr>
+				<td width="20"></td>
+
+				<td width="150" align="left" valign="top">
+				<h4>What We Did</h4>
+				</td>
+
+				<td width="50"></td>
+
+				<td width="650" align="left" valign="top">
+				<ul>
+					<li><span>Developed brand concept of a specialty practice with the trustworthiness, expertise, and reliability of a large hospital</span></li>					<li><span>Designed a logo and a suite of other images to visually represent the brand concept</span></li>					<li><span>Designed a website containing a comprehensive online physician referral system and an accompanying mobile app to parallel the online system</span></li>
+				<ul>
+				</td>
+
+				<td width="130"></td>
+			</tr>
+		</table>
+
+		<table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
+			<td width="500" align="left" valign="top"><p><a href="portfolio-fresenius-medical-care-north-america.php.html">&#8592; Previous Client</a></p></td>
+			<td width="500" align="right" valign="top"><p><a href="portfolio-connecticut-image-guided-surgery.php.html">Next Client&#8594;</a></p></td>
+		</tr></table>
+		
+		</td>
+
+		<td width="50"></td>
+	</tr>
+
+
+</table>
+
+
+<table width="100%" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr width="100%">
+		<td width="100%" height="100" align="center" valign="center">
+		<table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
+			<td width="50"></td>
+
+			<td width="500" align="left" valign="top">
+			<h5>&#169; 2012-2014 Ignite Brand Group, LLC. All rights reserved.</h5>
+			</td>
+
+			<td width="500" align="right" valign="top">
+			<h5><a href="https://maps.google.com/maps?q=1375+Broadway,+New+York,+NY&hl=en&sll=40.697488,-73.979681&sspn=1.128636,1.005249&oq=1375&hnear=1375+Broadway,+New+York,+10018&t=m&z=17" target="blank"><font color="#5a5859">1375 BROADWAY, 11TH FL, NEW YORK, NY 10018</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="privacy-policy.php.html"><font color="#5a5859">PRIVACY POLICY</font></a></h5>
+			</td>
+
+			<td width="50"></td>
+		</tr></table>
+		</td>
+	</tr>
+
+</table>
+
+</body>
+</html>
