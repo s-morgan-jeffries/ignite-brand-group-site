@@ -8,7 +8,7 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-var _ = require('lodash');
+//var _ = require('lodash');
 //var assemble = require('assemble');
 //console.log(assemble);
 
@@ -115,7 +115,8 @@ module.exports = function (grunt) {
             '.tmp',
             '<%= yeoman.dist %>/*',
             '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/CNAME'
+            '!<%= yeoman.dist %>/CNAME',
+            '!<%= yeoman.dist %>/_00.txt'
           ]
         }]
       },
@@ -226,7 +227,8 @@ module.exports = function (grunt) {
               'components/**/*.ttf',
               'components/**/*.woff',
               'components/**/*.png',
-              'components/**/*.gif'
+              'components/**/*.gif',
+              'components/**/*.css'
             ]
           }
         ]
@@ -322,7 +324,12 @@ module.exports = function (grunt) {
           '../../<%= yeoman.src %>/bower_components/sinonjs/sinon.js',
           '../../<%= yeoman.src %>/bower_components/jasmine-sinon/lib/jasmine-sinon.js',
           // Dependencies (if any)
+          '../../<%= yeoman.src %>/bower_components/jquery/dist/jquery.js',
+          '../../<%= yeoman.src %>/bower_components/facebox/src/facebox.js',
+          '../../<%= yeoman.src %>/components/tipuedrop/tipuedrop/tipuedrop.js',
+          '../../<%= yeoman.src %>/components/tipuesearch/tipuesearch/tipuesearch.js',
           // Utilities (if any)
+          '../../node_modules/lodash/lodash.js',
 //          '../../<%= yeoman.src %>/bower_components/lodash/dist/lodash.js',
           // The source files for the scripts under test
           '../../<%= yeoman.src %>/scripts/**/*.js',

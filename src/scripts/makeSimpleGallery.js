@@ -1,4 +1,5 @@
 /* global simpleGallery: true */
+// jshint unused: false
 
 var makeSimpleGallery = function (imageFiles) {
   'use strict';

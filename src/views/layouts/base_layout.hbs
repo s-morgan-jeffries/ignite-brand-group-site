@@ -12,7 +12,9 @@
     <meta name="copyright" content="Copyright 2013 © Ignite Brand Group, LLC">
     <meta name="author" content="Ignite Brand Group, LLC">
     <meta name="email" content="info@ignitebrandgroup.com">
-    <title>Ignite Brand Group | Branding Doctors and Lawyers</title>
+    <title>
+        Ignite Brand Group{{#if title }} | {{title}}{{/if}}
+    </title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="SHORTCUT ICON" href="/images/logo.ico"/>
     {{!--<!-- build:css({.tmp,src}) styles/vendor.css -->--}}
@@ -20,9 +22,13 @@
     <!-- build:css({.tmp,src}) /styles/main.css -->
     <link rel="stylesheet" href="/bower_components/facebox/src/facebox.css">
     <link rel="stylesheet" href="/components/flexdropdown/flexdropdown.css">
-    <link rel="stylesheet" href="/components/tipuesearch/tipuesearch/tipuesearch.css">
+    {{!--<link rel="stylesheet" href="/components/tipuesearch/tipuesearch/tipuesearch.css">--}}
     <link rel="stylesheet" href="/styles/style.css">
     <!-- endbuild -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    {{!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>--}}
+
+    <link href="/components/tipuedrop/tipuedrop/tipuedrop.css" rel="stylesheet">
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -54,17 +60,21 @@
     <!-- build:js({.tmp,src}) /scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/lunr.js/lunr.js"></script>
     <script src="/bower_components/jcarousel/dist/jquery.jcarousel.js"></script>
     <!-- endbower -->
     <script src="/bower_components/facebox/src/facebox.js"></script>
     <script src="/components/flexdropdown/flexdropdown.js"></script>
     <script src="/components/simplegallery/simplegallery.js"></script>
+    {{!--<script src="/components/tipuedrop/tipuedrop/tipuedrop_content.js"></script>--}}
+    {{!--<script src="/components/tipuedrop/tipuedrop/tipuedrop.js"></script>--}}
+    <script src="/components/swiftype-search-jquery/jquery.ba-hashchange.min.js"></script>
+    <script src="/components/swiftype-search-jquery/jquery.swiftype.search.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,src}) /scripts/scripts.js -->
     <script src="/scripts/utils.js"></script>
     <script src="/scripts/makeSimpleGallery.js"></script>
+    {{!--<script src="/scripts/tipue.js"></script>--}}
     <!-- endbuild -->
 
     {{#if simpleGalleryImages}}
@@ -74,6 +84,21 @@
                 simpleGalleryImages.push('{{this}}');
             {{/each}}
             makeSimpleGallery(simpleGalleryImages);
+        </script>
+    {{/if}}
+
+    {{#if useSwifType}}
+        <script type="text/javascript">
+            var Swiftype = window.Swiftype || {};
+            (function() {
+                Swiftype.key = '7tzN3t4DExDi-NZ8Hy1f';
+
+                /** DO NOT EDIT BELOW THIS LINE **/
+                var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+                script.src = "//s.swiftypecdn.com/embed.js";
+                var entry = document.getElementsByTagName('script')[0];
+                entry.parentNode.insertBefore(script, entry);
+            }());
         </script>
     {{/if}}
 

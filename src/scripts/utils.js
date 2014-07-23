@@ -1,3 +1,5 @@
+// jshint unused: false
+
 function validate() {
   'use strict';
 
@@ -28,6 +30,7 @@ function setFormWidth() {
 (function ($) {
   'use strict';
 
+//  console.log($);
   $('a[rel*=facebox]').facebox({
     loadingImage : '/bower_components/facebox/src/loading.gif',
     closeImage   : '/bower_components/facebox/src/closelabel.png'

@@ -12,10 +12,12 @@
 
                     <div class="row input">
                         <div class="ten columns">
-                            <input name="search_query" type="text" autofocus="" placeholder="Search" onchange="reset_page()" />
+                            <input type="text" id="tipue_drop_input" autocomplete="off">
+                            <div id="tipue_drop_content"></div>
+                            {{!--<input name="search_query" type="text" autofocus="" placeholder="Search" onchange="reset_page()" />--}}
                         </div>
                         <div class="two columns">
-                            <a class="srch_button" style="text-decoration:none" onclick="do_it(0)">Search</a>
+                            {{!--<a class="srch_button" style="text-decoration:none" onclick="do_it(0)">Search</a>--}}
                         </div>
                     </div>
                     <input type="hidden" id="page" name="page" value = '0'/>
