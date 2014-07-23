@@ -87,7 +87,7 @@ $contact-links: linkedin twitter youtube facebook;
 
 $home-links: portfolio services oranges;
 @each $link in $home-links {
-  .sprite--#{$link}-tab {
+  .sprite--#{$link}-home {
     background-image: url("../images/icons/#{$link}/#{$link}-icon.png");
     &:hover {
       background-image: url("../images/icons/#{$link}/#{$link}-hover-icon.png");

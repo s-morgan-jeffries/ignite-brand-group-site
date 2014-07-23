@@ -8,6 +8,7 @@
   "dependencies": {},
   "devDependencies": {
     "assemble": "^0.4.41",
+    "assemble-middleware-lunr": "^0.2.1",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bump": "0.0.14",
@@ -36,6 +37,7 @@
     "karma-jasmine": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-tasks": "~0.4.0",
+    "lodash": "^2.4.1",
     "time-grunt": "~0.2.1"
   },
   "engines": {

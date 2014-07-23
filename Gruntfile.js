@@ -8,6 +8,10 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
+var _ = require('lodash');
+//var assemble = require('assemble');
+//console.log(assemble);
+
 module.exports = function (grunt) {
 
   // Load grunt tasks automatically
@@ -34,7 +38,8 @@ module.exports = function (grunt) {
         // Don't use this. We're using the base_layout.hbs file for usemin, so we
 //        assets: 'assets',
         // No plugins for now
-//        plugins: ['permalinks'],
+//        plugins: ['assemble-middleware-lunr'],
+        lunr: {},
         partials: ['<%= yeoman.src %>/views/partials/*.hbs'],
         layoutdir: '<%= yeoman.src %>/views/layouts',
         data: '<%= yeoman.src %>/views/data/dummy.json',
@@ -605,4 +610,10 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+//  console.log(_.keys(grunt));
+////  console.log(grunt.config.data);
+//  console.log(grunt.task);
+//  console.log(grunt.tasks);
+//  console.log(grunt.config.data);
 };
