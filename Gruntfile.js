@@ -40,11 +40,24 @@ module.exports = function (grunt) {
         data: '<%= yeoman.src %>/views/data/dummy.json',
         flatten: true
       },
+//      home: {
+//        options: {
+//          layout: 'base_layout.hbs'
+//        },
+//        src: [
+//          '<%= yeoman.src %>/views/static/home.hbs'
+//        ],
+//        dest: '<%= yeoman.temp %>/'
+//      },
       static: {
-        options: {
-          layout: 'standard_layout.hbs'
-        },
-        src: ['<%= yeoman.src %>/views/static/**/*.hbs'],
+//        options: {
+//          layout: 'standard_layout.hbs'
+//        },
+        expand: true,
+        cwd: '<%= yeoman.src %>/views/static',
+        src: [
+          './**/*.hbs'
+        ],
         dest: '<%= yeoman.temp %>/'
       }
     },
@@ -96,7 +109,8 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/*',
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
+            '!<%= yeoman.dist %>/CNAME'
           ]
         }]
       },
@@ -186,7 +200,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: '.tmp',
             dest: '<%= yeoman.dist %>',
-            src: ['*.html']
+            src: ['**/*.html']
           },
           // You have to have this to copy fonts
           {
@@ -199,7 +213,15 @@ module.exports = function (grunt) {
               'bower_components/**/*.eot',
               'bower_components/**/*.svg',
               'bower_components/**/*.ttf',
-              'bower_components/**/*.woff'
+              'bower_components/**/*.woff',
+              'bower_components/**/*.png',
+              'bower_components/**/*.gif',
+              'components/**/*.eot',
+              'components/**/*.svg',
+              'components/**/*.ttf',
+              'components/**/*.woff',
+              'components/**/*.png',
+              'components/**/*.gif'
             ]
           }
         ]
@@ -241,7 +263,9 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.src %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          src: [
+            '**/*.{png,jpg,jpeg,gif}'
+          ],
           dest: '<%= yeoman.dist %>/images'
         }]
       }
@@ -334,7 +358,7 @@ module.exports = function (grunt) {
           patterns: [
             {
               match: '../../bower_components',
-              replacement: 'bower_components'
+              replacement: '/bower_components'
             }
           ],
           usePrefix: false
@@ -358,6 +382,7 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
             '<%= yeoman.dist %>/styles/{,*/}*.css',
             '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+            '!<%= yeoman.dist %>/images/norev/*',
             '<%= yeoman.dist %>/styles/fonts/*'
           ]
         }
@@ -404,9 +429,10 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
+//        assetsDirs: ['<%= yeoman.dist %>/**/']
         assetsDirs: ['<%= yeoman.dist %>']
       }
     },
@@ -422,6 +448,7 @@ module.exports = function (grunt) {
           html: {
             steps: {
               js: ['concat', 'uglifyjs'],
+//              js: ['concat'],
               css: ['cssmin']
             },
             post: {}
@@ -569,8 +596,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'rev',
-    'usemin',
-    'htmlmin'
+    'usemin'/*,
+    'htmlmin'*/
   ]);
 
   grunt.registerTask('default', [

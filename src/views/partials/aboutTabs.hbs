@@ -1,0 +1,10 @@
+---
+tabNames:
+- work-with-us
+- what-we-believe
+- why-we-work
+- who-we-are
+---
+{{#each aboutTabs.tabNames}}
+    <a href="/about/{{this}}.html" class="sprite sprite--tabs sprite--{{this}}-tab">{{this}}</a>
+{{/each}}

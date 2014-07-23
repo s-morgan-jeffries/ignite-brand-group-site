@@ -5,12 +5,22 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="Ignite helps businesses look distinctive - specifically lawyers, doctors, and other professionals who think outside the box. We help you present your best self and make the human connection needed to get not just any old client, but the right client. Our services include logo and web design, video and image production, copywriting, pay-per-click advertising, mobile apps, and more.">
+    <meta name="keywords" content="Ignite Brand Group, websites for doctors, websites for lawyers, new york branding agency, branding physicians, branding attorneys">
+    <meta name="copyright" content="Copyright 2013 © Ignite Brand Group, LLC">
+    <meta name="author" content="Ignite Brand Group, LLC">
+    <meta name="email" content="info@ignitebrandgroup.com">
+    <title>Ignite Brand Group | Branding Doctors and Lawyers</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css({.tmp,src}) styles/main.css -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="SHORTCUT ICON" href="/images/logo.ico"/>
+    {{!--<!-- build:css({.tmp,src}) styles/vendor.css -->--}}
+    {{!--<!-- endbuild -->--}}
+    <!-- build:css({.tmp,src}) /styles/main.css -->
+    <link rel="stylesheet" href="/bower_components/facebox/src/facebox.css">
+    <link rel="stylesheet" href="/components/flexdropdown/flexdropdown.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <!-- endbuild -->
 </head>
 <body>
@@ -34,19 +44,35 @@
     </script>
 
     <!--[if lt IE 9]>
-    <!-- build:js({.tmp,src}) scripts/vendor-ielt9.js -->
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <!-- build:js({.tmp,src}) /scripts/vendor-ielt9.js -->
+    <script src="/bower_components/es5-shim/es5-shim.js"></script>
+    <script src="/bower_components/json3/lib/json3.min.js"></script>
     <!-- endbuild -->
     <![endif]-->
 
-    <!-- build:js({.tmp,src}) scripts/vendor.js -->
+    <!-- build:js({.tmp,src}) /scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
+    <script src="/bower_components/facebox/src/facebox.js"></script>
+    <script src="/components/flexdropdown/flexdropdown.js"></script>
+    <script src="/components/simplegallery/simplegallery.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js({.tmp,src}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
+    <!-- build:js({.tmp,src}) /scripts/scripts.js -->
+    <script src="/scripts/utils.js"></script>
+    <script src="/scripts/makeSimpleGallery.js"></script>
     <!-- endbuild -->
+
+    {{#if simpleGalleryImages}}
+        <script>
+            var simpleGalleryImages = [];
+            {{#each simpleGalleryImages}}
+                simpleGalleryImages.push('{{this}}');
+            {{/each}}
+            makeSimpleGallery(simpleGalleryImages);
+        </script>
+    {{/if}}
+
 </body>
 </html>

@@ -1,0 +1,9 @@
+---
+tabNames:
+- portfolio
+- how-we-work
+- what-we-do
+---
+{{#each servicesTabs.tabNames}}
+    <a href="/services/{{this}}.html" class="sprite sprite--tabs sprite--{{this}}-tab">{{this}}</a>
+{{/each}}

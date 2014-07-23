@@ -1,0 +1,96 @@
+---
+layout: standard_layout.hbs
+---
+
+<table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+
+    <tr width="1100">
+        <td width="50"></td>
+
+        <td width="1000" align="left" valign="top">
+            <br/>
+            <h1><a href="/services/portfolio.html">Portfolio</a></h1>
+
+            {{> servicesTabs }}
+            <br/><br/>
+
+            <div id="simplegallery1"></div>
+        </td>
+
+        <td width="50"></td>
+    </tr>
+
+
+    <tr width="1100">
+        <td colspan="3" width="1100" height="50"></td>
+    </tr>
+
+
+    <tr width="1100">
+        <td width="50"></td>
+
+        <td width="1000" align="left" valign="top">
+            <img src="/images/page-line.png" width="1000" height="25" border="0" alt=""/>
+            <h1>{{ organizationName }}</h1>
+            <br/>
+            <table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="20"></td>
+
+                    <td width="150" align="left" valign="top">
+                        <h4>Who They Are</h4>
+                    </td>
+
+                    <td width="50"></td>
+
+                    <td width="650" align="left" valign="top">
+                        <ul>
+                            <li><span>{{ whoTheyAre }}</span></li>
+                        </ul>
+                        <br/>
+                    </td>
+
+                    <td width="130"></td>
+                </tr>
+
+                <tr>
+                    <td width="20"></td>
+
+                    <td width="150" align="left" valign="top">
+                        <h4>What We Did</h4>
+                    </td>
+
+                    <td width="50"></td>
+
+                    <td width="650" align="left" valign="top">
+                        <ul>
+                            {{#each whatWeDid}}
+                                <li><span>{{ this }}</span></li>
+                            {{/each}}
+                        </ul>
+                    </td>
+
+                    <td width="130"></td>
+                </tr>
+            </table>
+
+            <table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
+                <td width="500" align="left" valign="top">
+                    {{#if prevClient}}
+                        <p><a href="{{ prevClient }}">&#8592; Previous Client</a></p>
+                    {{/if}}
+                </td>
+                <td width="500" align="right" valign="top">
+                    {{#if nextClient}}
+                        <p><a href="{{ nextClient }}">Next Client&#8594;</a></p>
+                    {{/if}}
+                </td>
+            </tr></table>
+
+        </td>
+
+        <td width="50"></td>
+    </tr>
+
+
+</table>

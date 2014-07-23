@@ -1,0 +1,192 @@
+---
+layout: standard_layout.hbs
+---
+
+<table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+
+    <tr width="1100">
+        <td width="50"></td>
+
+        <td width="1000" align="left" valign="top">
+            <br/>
+            <h1>FAQ</h1>
+            <table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
+                <td width="475" align="left" valign="top">
+                    <p>Here are some frequently asked questions. If you can't find the answer to your question here, <a href="/contact-us.html">just ask!</a> We're happy to help.</p>
+                </td>
+
+                <td width="50"></td>
+
+                <td width="475" align="left" valign="top">
+                    <img src="/images/faq-intro.png" width="475" height="100" border="0" alt="Valencia Orange answering your frequently asked questions (FAQs)."/>
+                </td>
+            </tr></table>
+        </td>
+
+        <td width="50"></td>
+    </tr>
+
+    <tr width="1100">
+        <td colspan="3" width="1100" height="25"></td>
+    </tr>
+
+
+
+
+    <tr width="1100">
+        <td width="50"></td>
+
+        <td width="1000" align="center" valign="center">
+            <table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
+                <tr id="about-branding">
+
+                    <td width="300" align="left" valign="top">
+                        <h3>About Branding and Internet Terminology</h3>
+                        <ul>
+                            <li>
+                                <a href="/faq/what-is-branding.html#answer"><font color="#5f5b59">What is branding?</font></a>
+                            </li>
+                            <li>
+                                <a href="/faq/what-is-an-avatar.html#answer"><font color="#5f5b59">What is an avatar?</font></a>
+                            </li>
+                            <li>
+                                <a href="/faq/what-is-the-difference-between-a-website-and-a-webpage.html#answer"><font color="#5f5b59">What is the difference between a website and a webpage?</font></a>
+                            </li>
+                            <li>
+                                <a href="/faq/what-is-the-difference-between-website-hosting-domain-names-and-urls.html#answer"><font color="#5f5b59">What is the difference between website hosting, domain names, and URLs?</font></a>
+                            </li>
+                            <li>
+                                <a href="/faq/what-is-the-difference-between-seo-and-sem.html#answer"><font color="#5f5b59">What is the difference between SEO and SEM?</font></a>
+                            </li>
+                            <li>
+                                <a href="/faq/what-is-pay-per-click-advertising.html#answer"><font color="#5f5b59">What is pay-per-click advertising (PPC)?</font></a>
+                            </li>
+                        </ul>
+                        <br/>
+                    </td>
+                    {{#is faqCategory "about-branding"}}
+                        <td width="100" align="center" valign="top">
+                            <a id="answer"><img src="/images/faq-arrow-0{{ answerNumber }}.png" width="100" height="280" border="0" alt=""/></a>
+                        </td>
+
+                        <td width="600" align="left" valign="top">
+                            <br/>
+                            {{{ answerHtml }}}
+                        </td>
+                    {{else}}
+                        <td width="100" align="center" valign="top"></td>
+                        <td width="600" align="left" valign="top">
+                    {{/is}}
+
+                </tr>
+
+
+                <tr id="about-services">
+                    <td width="300" align="left" valign="top">
+                        <h3>About Our Services</h3>
+                        <ul>
+                            <li><a href="/faq/how-quickly-can-you-complete-my-project.html#answer"><font color="#5f5b59">How quickly can you complete my project?</font></a></li>
+                            <li><a href="/faq/how-much-do-your-services-cost.html#answer"><font color="#5f5b59">How much do your services cost?</font></a></li>
+                            <li><a href="/faq/do-you-have-different-payment-plans.html#answer"><font color="#5f5b59">Do you have different payment plans?</font></a></li>
+                            <li><a href="/faq/do-you-work-with-clients-outside-of-new-york.html#answer"><font color="#5f5b59">Do you work with clients outside of New York?</font></a></li>
+                            <li><a href="/faq/can-you-still-help-me.html#answer"><font color="#5f5b59">I have a problem or an idea for a project that isn't listed on your Services page. Can you still help me?</font></a></li>
+                        </ul>
+                        <br/>
+                    </td>
+                    {{#is faqCategory "about-services"}}
+                        <td width="100" align="center" valign="top">
+                            <a id="answer"><img src="/images/faq-arrow-services-0{{ answerNumber }}.png" width="100" height="280" border="0" alt=""/></a>
+                        </td>
+
+                        <td width="600" align="left" valign="top">
+                            <br/>
+                            {{{ answerHtml }}}
+                        </td>
+                    {{else}}
+                        <td width="100" align="center" valign="top"></td>
+                        <td width="600" align="left" valign="top">
+                    {{/is}}
+                </tr>
+
+
+                <tr>
+
+                    <td width="300" align="left" valign="top"></td>
+                    <td width="100" align="center" valign="top"></td>
+
+                    <td width="600" align="left" valign="top">
+
+                    </td>
+
+                </tr>
+
+
+                <tr id="about-oranges">
+                    <td width="300" align="left" valign="top">
+                        <h3>About Our Oranges</h3>
+                        <ul>
+                            <li><a href="/faq/what-is-talking-oranges.html#answer"><font color="#5f5b59">What is Talking Oranges?</font></a></li>
+                            <li><a href="/faq/why-oranges.html#answer"><font color="#5f5b59">Why oranges?</font></a></li>
+                            <li><a href="/faq/do-you-have-any-merchandise-for-sale.html#answer"><font color="#5f5b59">I love your oranges! Do you have any merchandise for sale?</font></a></li>
+                        </ul>
+                        <br/>
+                    </td>
+                    {{!--<td width="100" align="center" valign="top"></td>--}}
+
+                    {{!--<td width="600" align="left" valign="top">--}}
+                    {{#is faqCategory "about-oranges"}}
+                        <td width="100" align="center" valign="top">
+                            <a id="answer"><img src="/images/faq-arrow-oranges-0{{ answerNumber }}.png" width="100" height="150" border="0" alt=""/></a>
+                        </td>
+
+                        <td width="600" align="left" valign="top">
+                            <br/>
+                            {{{ answerHtml }}}
+                        </td>
+                    {{else}}
+                        <td width="100" align="center" valign="top"></td>
+                        <td width="600" align="left" valign="top">
+                    {{/is}}
+
+                    </td>
+                </tr>
+
+
+                <tr id="about-other">
+
+                    <td width="300" align="left" valign="top">
+                        <h3>About Everything Else</h3>
+                        <ul>
+                            <li><a href="/faq/how-can-i-ask-you.html#answer"><font color="#5f5b59">I have a question that isn't answered here. How can I ask you?</font></a></li>
+                            <li><a href="/faq/how-do-i-contact-you.html#answer"><font color="#5f5b59">I want to learn more about how you can help me. How do I contact you?</font></a></li>
+                        </ul>
+                        <br/>
+                    </td>
+                    {{!--<td width="100" align="center" valign="top"></td>--}}
+
+                    {{!--<td width="600" align="left" valign="top">--}}
+                    {{#is faqCategory "about-other"}}
+                        <td width="100" align="center" valign="top">
+                            <a id="answer"><img src="/images/faq-arrow-other-0{{ answerNumber }}.png" width="100" height="150" border="0" alt=""/></a>
+                        </td>
+
+                        <td width="600" align="left" valign="top">
+                            <br/>
+                            {{{ answerHtml }}}
+                        </td>
+                    {{else}}
+                        <td width="100" align="center" valign="top"></td>
+                        <td width="600" align="left" valign="top">
+                    {{/is}}
+
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+
+        <td width="50"></td>
+    </tr>
+
+
+</table>

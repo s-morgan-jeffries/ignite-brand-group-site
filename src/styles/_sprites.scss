@@ -1,0 +1,130 @@
+.sprite,
+.icon{
+  line-height:1;
+  position:relative;
+  vertical-align:middle;
+  zoom:1;
+  /**
+   * So using `.icon` on certain elements doesn’t make a visual difference.
+   */
+  font-style:normal;
+  font-weight:normal;
+  /**
+   * So icons added using `.icon` sit in the centre of the element.
+   */
+  text-align:center;
+}
+.sprite{
+  /**
+   * The typical size of most icons. Override in your theme stylesheet.
+   */
+//  width: 16px;
+//  height:16px;
+  top:-1px;
+
+  /*
+   * H5BP method image replacement:
+   * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
+   */
+  overflow:hidden;
+  *text-indent:-9999px;
+
+  &:before{
+    content:"";
+    display:block;
+    width:0;
+    height:100%;
+  }
+}
+
+.sprite--logo {
+  display:inline-block;
+  width: 169px;
+  height: 50px;
+  background-image: url("../images/icons/logo/logo.png");
+  &:hover {
+    background-image: url("../images/icons/logo/logo-hover.png");
+  }
+}
+
+.sprite--navbar {
+  display:inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+$nav-links: search insidestartups linkedin twitter youtube facebook;
+@each $link in $nav-links {
+  .sprite--#{$link}-nav {
+    background-image: url("../images/icons/#{$link}/#{$link}-navbar.png");
+    &:hover {
+      background-image: url("../images/icons/#{$link}/#{$link}-hover-navbar.png");
+    }
+  }
+}
+
+.sprite--contact {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+$contact-links: linkedin twitter youtube facebook;
+@each $link in $contact-links {
+  .sprite--#{$link}-contact {
+    background-image: url("../images/icons/#{$link}/#{$link}-contact.png");
+    &:hover {
+      background-image: url("../images/icons/#{$link}/#{$link}-hover-contact.png");
+    }
+  }
+}
+
+.sprite--home {
+  display:inline-block;
+  width: 137px;
+  height: 137px;
+}
+
+$home-links: portfolio services oranges;
+@each $link in $home-links {
+  .sprite--#{$link}-tab {
+    background-image: url("../images/icons/#{$link}/#{$link}-icon.png");
+    &:hover {
+      background-image: url("../images/icons/#{$link}/#{$link}-hover-icon.png");
+    }
+  }
+}
+
+.sprite--tabs {
+  display:block;
+  float: right;
+  width: 129px;
+  height: 30px;
+}
+
+$tabs: work-with-us what-we-believe why-we-work who-we-are portfolio how-we-work what-we-do;
+@each $tab in $tabs {
+  .sprite--#{$tab}-tab {
+    background-image: url("../images/icons/tabs/#{$tab}/#{$tab}.png");
+    &:hover {
+      background-image: url("../images/icons/tabs/#{$tab}/#{$tab}-hover.png");
+    }
+  }
+}
+
+.sprite--company-logos {
+  display:inline-block;
+  width: 300px;
+  height: 200px;
+//  z-index: -1;
+}
+
+$companies: aac alma bvc cigs fmc fvc isa lvg sld vbl vva wpvv;
+@each $company in $companies {
+  .sprite--#{$company}-logo {
+    background-image: url("../images/icons/companies/#{$company}/#{$company}-icon.png");
+    &:hover {
+      background-image: url("../images/icons/companies/#{$company}/#{$company}-hover-icon.png");
+    }
+  }
+}
