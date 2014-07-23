@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/styles/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <table align="center" width="100%">
+        <tr><td>&nbsp</td></tr>
+        <tr>
+            <td>
+                <form name="search_form" id="search_form" action="" method="post" onsubmit="return do_it()" >
+
+                    <div class="row input">
+                        <div class="ten columns">
+                            <input name="search_query" type="text" autofocus="" placeholder="Search" onchange="reset_page()" />
+                        </div>
+                        <div class="two columns">
+                            <a class="srch_button" style="text-decoration:none" onclick="do_it(0)">Search</a>
+                        </div>
+                    </div>
+                    <input type="hidden" id="page" name="page" value = '0'/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="search_result"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
