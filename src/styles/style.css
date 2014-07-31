@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\000031}}
 html, body {
   height: 100%;
   margin: 0;
@@ -8,6 +9,7 @@ html, body {
   color: #000000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000310}}
 body {
   bgcolor: "#ffffff";
   leftmargin: 0;
@@ -16,6 +18,7 @@ body {
   marginheight: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000318}}
 .homepage-content {
   background-image: url("../images/the-secret-garden-orange-edition.png");
   background-size: 100%;
@@ -24,10 +27,12 @@ body {
   background-attachment: fixed;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000326}}
 .simple-gallery {
   z-index: 100;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000330}}
 .tagline {
   background-image: url("../images/orange.png");
   font-family: geneva, tahoma, 'trebuchet ms';
@@ -35,22 +40,27 @@ body {
   font-size: 48px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000338}}
 .who-we-are-banner {
   background-image: url("../images/banner-who-we-are.jpg");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000342}}
 .what-we-do-banner {
   background-image: url("../images/banner-what-we-do.jpg");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000346}}
 .how-we-work-banner {
   background-image: url("../images/banner-how-we-work.jpg");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000350}}
 .contact-us-banner {
   background-image: url("../images/banner-contact-us.jpg");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000354}}
 .form-input {
   height: 40px;
   width: 330px;
@@ -58,6 +68,7 @@ body {
   margin: 5px 0px 5px 0px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000361}}
 .form-input2 {
   height: 40px;
   width: 200px;
@@ -65,16 +76,19 @@ body {
   margin: 5px 0px 5px 0px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000368}}
 select {
   padding: 6px 0 0 0;
   font-size: 16px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000373}}
 span {
   font-size: 19px;
   font-family: "gill sans", verdana;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000378}}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -84,12 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**PRIMARY TITLES IN ORANGE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000387}}
 h1 {
   font-size: 2.3em;
   color: #FF6900;
 }
 
 /**MENU BAR TITLES IN DARK GRAY*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000390}}
 h2 {
   font-size: 0.8em;
   font-family: geneva, tahoma;
@@ -97,36 +113,42 @@ h2 {
 }
 
 /**SECONDARY TITLES IN ORANGE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000393}}
 h3 {
   font-size: 1.4em;
   color: #FF6900;
 }
 
 /**TERTIARY TITLES IN BLACK*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000396}}
 h4 {
   font-size: 1.4em;
   color: #000000;
 }
 
 /**FOOTER TEXT IN DARK GRAY*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000399}}
 h5 {
   font-size: 0.8em;
   color: #5f5b59;
 }
 
 /**PRIMARY TITLES IN WHITE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003102}}
 h6 {
   font-size: 4.0em;
   color: #FFFFFF;
 }
 
 /**HOME PAGE TITLES IN ORANGE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003105}}
 .homepage-title {
   font-size: 1.8em;
   color: #FF6900;
 }
 
 /**BODY TEXT IN DARK GRAY*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003108}}
 p, ul, ol {
   font-size: 0.8em;
   color: #5f5b59;
@@ -134,54 +156,64 @@ p, ul, ol {
   line-height: 190%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003110}}
 li {
   color: #FF6900;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003111}}
 span {
   color: #5f5b59;
 }
 
 /**HIGHLIGHTS LINKS IN ORANGE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003114}}
 a {
   text-decoration: none;
   color: #FF6900;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003115}}
 a:hover {
   text-decoration: underline;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .input-append .search-query, .form-search .input-prepend .search-query {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .input-append .search-query {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .input-append .btn {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .input-prepend .search-query {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .input-prepend .btn {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search input, .form-inline input, .form-horizontal input, .form-search textarea, .form-inline textarea, .form-horizontal textarea, .form-search select, .form-inline select, .form-horizontal select, .form-search .help-inline, .form-inline .help-inline, .form-horizontal .help-inline, .form-search .uneditable-input, .form-inline .uneditable-input, .form-horizontal .uneditable-input, .form-search .input-prepend, .form-inline .input-prepend, .form-horizontal .input-prepend, .form-search .input-append, .form-inline .input-append, .form-horizontal .input-append {
   display: inline-block;
   *display: inline;
@@ -190,24 +222,29 @@ a:hover {
   *zoom: 1;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .hide, .form-inline .hide, .form-horizontal .hide {
   display: none;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search label, .form-inline label, .form-search .btn-group, .form-inline .btn-group {
   display: inline-block;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .input-append, .form-inline .input-append, .form-search .input-prepend, .form-inline .input-prepend {
   margin-bottom: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003118}}
 .form-search .radio, .form-search .checkbox, .form-inline .radio, .form-inline .checkbox {
   padding-left: 0;
   margin-bottom: 0;
   vertical-align: middle;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .form-search .radio input[type="radio"], .form-search .checkbox input[type="checkbox"]
 .btn {
   display: inline-block;
@@ -228,7 +265,7 @@ a:hover {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
   background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(to bottom, white, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
   background-repeat: repeat-x;
   border: 1px solid #ccc;
   *border: 0;
@@ -246,20 +283,24 @@ a:hover {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
   color: #333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .btn:active, .btn.active {
   background-color: #ccc \9;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .btn:first-child {
   *margin-left: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .btn:hover, .btn:focus {
   color: #333;
   text-decoration: none;
@@ -270,12 +311,14 @@ a:hover {
   transition: background-position .1s linear;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003120}}
 .btn.active, .btn:active {
   background-image: none;
   outline: 0;
@@ -284,6 +327,7 @@ a:hover {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003122}}
 .job {
   background-color: #e0e0df;
   font-family: geneva, tahoma;
@@ -292,21 +336,25 @@ a:hover {
   padding: 20px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003130}}
 .job-input {
   width: 260px;
   height: 45px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003134}}
 .job-text-area {
   height: 50px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003139}}
 .form-header {
   color: #FF6900;
   font-size: 30px;
   font-family: 'gill sans', verdana;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003145}}
 .overlay {
   display: none;
   opacity: 0;
@@ -318,6 +366,7 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\00003152}}
 .modal {
   display: none;
   position: absolute;
@@ -330,6 +379,7 @@ a:hover {
   background: #fff;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_header\.scss}line{font-family:\000031}}
 .header {
   background: #FFFFFF;
   position: fixed;
@@ -339,14 +389,17 @@ a:hover {
   z-index: 1000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_header\.scss}line{font-family:\0000310}}
 .logo {
   float: left;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\000031}}
 .row.input .column, .row.input .columns {
   padding: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\000035}}
 .row .row.input {
   margin: 0 -15px;
   max-width: 100%;
@@ -355,6 +408,7 @@ a:hover {
   margin: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000312}}
 .column, .columns {
   float: left;
   min-height: 1px;
@@ -362,42 +416,52 @@ a:hover {
   position: relative;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000319}}
 .ten, .row .ten {
   width: 83.3333%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000322}}
 .eight, .row .eight {
   width: 66.66668%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000325}}
 .seven, .row .seven {
   width: 58.333345%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000328}}
 .five, .row .five {
   width: 41.666675%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000331}}
 .two, .row .two {
   width: 16.66667%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000334}}
 .one, .row .one {
   width: 8.33335%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000338}}
 .four, .row .four {
   width: 33.3334;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000341}}
 .six, .row .six {
   width: 50.0000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000346}}
 .full-width, .row .full-width {
   width: 100%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000350}}
 .srch_button, .next-button {
   background: none repeat scroll 0 0 #333333;
   border: 1px solid #0D0D0D;
@@ -423,12 +487,14 @@ a:hover {
   width: auto;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000375}}
 .next-button {
   float: right;
   height: 35px;
   width: 80px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000381}}
 input[type="text"] {
   background-color: #FFFFFF;
   border: 1px solid #CCCCCC;
@@ -445,10 +511,12 @@ input[type="text"] {
   width: 100%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\0000397}}
 * {
   box-sizing: border-box;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\00003101}}
 #search-modal, .search-paging {
   margin-top: 18px;
   margin-bottom: 18px;
@@ -457,6 +525,12 @@ input[type="text"] {
   float: right;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\00003109}}
+.popup {
+  margin-top: 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\000032}}
 .sprite,
 .icon {
   line-height: 1;
@@ -474,6 +548,7 @@ input[type="text"] {
   text-align: center;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000317}}
 .sprite {
   /**
    * The typical size of most icons. Override in your theme stylesheet.
@@ -486,6 +561,7 @@ input[type="text"] {
   overflow: hidden;
   *text-indent: -9999px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000332}}
 .sprite:before {
   content: "";
   display: block;
@@ -493,125 +569,157 @@ input[type="text"] {
   height: 100%;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000340}}
 .sprite--logo {
   display: inline-block;
   width: 169px;
   height: 50px;
   background-image: url("../images/icons/logo/logo.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000345}}
 .sprite--logo:hover {
   background-image: url("../images/icons/logo/logo-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000350}}
 .sprite--navbar {
   display: inline-block;
   width: 25px;
   height: 25px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000358}}
 .sprite--search-nav {
   background-image: url("../images/icons/search/search-navbar.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000360}}
 .sprite--search-nav:hover {
   background-image: url("../images/icons/search/search-hover-navbar.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000358}}
 .sprite--insidestartups-nav {
   background-image: url("../images/icons/insidestartups/insidestartups-navbar.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000360}}
 .sprite--insidestartups-nav:hover {
   background-image: url("../images/icons/insidestartups/insidestartups-hover-navbar.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000358}}
 .sprite--linkedin-nav {
   background-image: url("../images/icons/linkedin/linkedin-navbar.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000360}}
 .sprite--linkedin-nav:hover {
   background-image: url("../images/icons/linkedin/linkedin-hover-navbar.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000358}}
 .sprite--twitter-nav {
   background-image: url("../images/icons/twitter/twitter-navbar.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000360}}
 .sprite--twitter-nav:hover {
   background-image: url("../images/icons/twitter/twitter-hover-navbar.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000358}}
 .sprite--youtube-nav {
   background-image: url("../images/icons/youtube/youtube-navbar.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000360}}
 .sprite--youtube-nav:hover {
   background-image: url("../images/icons/youtube/youtube-hover-navbar.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000358}}
 .sprite--facebook-nav {
   background-image: url("../images/icons/facebook/facebook-navbar.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000360}}
 .sprite--facebook-nav:hover {
   background-image: url("../images/icons/facebook/facebook-hover-navbar.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000366}}
 .sprite--contact {
   display: inline-block;
   width: 40px;
   height: 40px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000374}}
 .sprite--linkedin-contact {
   background-image: url("../images/icons/linkedin/linkedin-contact.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000376}}
 .sprite--linkedin-contact:hover {
   background-image: url("../images/icons/linkedin/linkedin-hover-contact.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000374}}
 .sprite--twitter-contact {
   background-image: url("../images/icons/twitter/twitter-contact.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000376}}
 .sprite--twitter-contact:hover {
   background-image: url("../images/icons/twitter/twitter-hover-contact.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000374}}
 .sprite--youtube-contact {
   background-image: url("../images/icons/youtube/youtube-contact.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000376}}
 .sprite--youtube-contact:hover {
   background-image: url("../images/icons/youtube/youtube-hover-contact.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000374}}
 .sprite--facebook-contact {
   background-image: url("../images/icons/facebook/facebook-contact.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000376}}
 .sprite--facebook-contact:hover {
   background-image: url("../images/icons/facebook/facebook-hover-contact.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000382}}
 .sprite--home {
   display: inline-block;
   width: 137px;
   height: 137px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000390}}
 .sprite--portfolio-home {
   background-image: url("../images/icons/portfolio/portfolio-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000392}}
 .sprite--portfolio-home:hover {
   background-image: url("../images/icons/portfolio/portfolio-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000390}}
 .sprite--services-home {
   background-image: url("../images/icons/services/services-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000392}}
 .sprite--services-home:hover {
   background-image: url("../images/icons/services/services-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000390}}
 .sprite--oranges-home {
   background-image: url("../images/icons/oranges/oranges-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000392}}
 .sprite--oranges-home:hover {
   background-image: url("../images/icons/oranges/oranges-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\0000398}}
 .sprite--tabs {
   display: block;
   float: right;
@@ -619,141 +727,180 @@ input[type="text"] {
   height: 30px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--work-with-us-tab {
   background-image: url("../images/icons/tabs/work-with-us/work-with-us.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--work-with-us-tab:hover {
   background-image: url("../images/icons/tabs/work-with-us/work-with-us-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--what-we-believe-tab {
   background-image: url("../images/icons/tabs/what-we-believe/what-we-believe.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--what-we-believe-tab:hover {
   background-image: url("../images/icons/tabs/what-we-believe/what-we-believe-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--why-we-work-tab {
   background-image: url("../images/icons/tabs/why-we-work/why-we-work.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--why-we-work-tab:hover {
   background-image: url("../images/icons/tabs/why-we-work/why-we-work-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--who-we-are-tab {
   background-image: url("../images/icons/tabs/who-we-are/who-we-are.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--who-we-are-tab:hover {
   background-image: url("../images/icons/tabs/who-we-are/who-we-are-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--portfolio-tab {
   background-image: url("../images/icons/tabs/portfolio/portfolio.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--portfolio-tab:hover {
   background-image: url("../images/icons/tabs/portfolio/portfolio-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--how-we-work-tab {
   background-image: url("../images/icons/tabs/how-we-work/how-we-work.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--how-we-work-tab:hover {
   background-image: url("../images/icons/tabs/how-we-work/how-we-work-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003107}}
 .sprite--what-we-do-tab {
   background-image: url("../images/icons/tabs/what-we-do/what-we-do.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003109}}
 .sprite--what-we-do-tab:hover {
   background-image: url("../images/icons/tabs/what-we-do/what-we-do-hover.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003115}}
 .sprite--company-logos {
   display: inline-block;
   width: 300px;
   height: 200px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--aac-logo {
   background-image: url("../images/icons/companies/aac/aac-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--aac-logo:hover {
   background-image: url("../images/icons/companies/aac/aac-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--alma-logo {
   background-image: url("../images/icons/companies/alma/alma-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--alma-logo:hover {
   background-image: url("../images/icons/companies/alma/alma-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--bvc-logo {
   background-image: url("../images/icons/companies/bvc/bvc-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--bvc-logo:hover {
   background-image: url("../images/icons/companies/bvc/bvc-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--cigs-logo {
   background-image: url("../images/icons/companies/cigs/cigs-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--cigs-logo:hover {
   background-image: url("../images/icons/companies/cigs/cigs-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--fmc-logo {
   background-image: url("../images/icons/companies/fmc/fmc-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--fmc-logo:hover {
   background-image: url("../images/icons/companies/fmc/fmc-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--fvc-logo {
   background-image: url("../images/icons/companies/fvc/fvc-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--fvc-logo:hover {
   background-image: url("../images/icons/companies/fvc/fvc-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--isa-logo {
   background-image: url("../images/icons/companies/isa/isa-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--isa-logo:hover {
   background-image: url("../images/icons/companies/isa/isa-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--lvg-logo {
   background-image: url("../images/icons/companies/lvg/lvg-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--lvg-logo:hover {
   background-image: url("../images/icons/companies/lvg/lvg-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--sld-logo {
   background-image: url("../images/icons/companies/sld/sld-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--sld-logo:hover {
   background-image: url("../images/icons/companies/sld/sld-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--vbl-logo {
   background-image: url("../images/icons/companies/vbl/vbl-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--vbl-logo:hover {
   background-image: url("../images/icons/companies/vbl/vbl-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--vva-logo {
   background-image: url("../images/icons/companies/vva/vva-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--vva-logo:hover {
   background-image: url("../images/icons/companies/vva/vva-hover-icon.png");
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003124}}
 .sprite--wpvv-logo {
   background-image: url("../images/icons/companies/wpvv/wpvv-icon.png");
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_sprites\.scss}line{font-family:\00003126}}
 .sprite--wpvv-logo:hover {
   background-image: url("../images/icons/companies/wpvv/wpvv-hover-icon.png");
 }

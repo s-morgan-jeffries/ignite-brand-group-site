@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         lunr: {},
         partials: ['<%= yeoman.src %>/views/partials/*.hbs'],
         layoutdir: '<%= yeoman.src %>/views/layouts',
-        data: '<%= yeoman.src %>/views/data/dummy.json',
+        data: '<%= yeoman.src %>/views/data/data.json',
         flatten: true
       },
 //      home: {
@@ -75,9 +75,9 @@ module.exports = function (grunt) {
       build: {
         files: [{
           expand: true,
-          cwd: '.tmp/styles/',
+          cwd: '<%= yeoman.temp %>/styles/',
           src: '{,*/}*.css',
-          dest: '.tmp/styles/'
+          dest: '<%= yeoman.temp %>/styles/'
         }]
       }
     },
@@ -112,7 +112,7 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-            '.tmp',
+            '<%= yeoman.temp %>',
             '<%= yeoman.dist %>/*',
             '!<%= yeoman.dist %>/.git*',
             '!<%= yeoman.dist %>/CNAME',
@@ -120,19 +120,42 @@ module.exports = function (grunt) {
           ]
         }]
       },
-      server: '.tmp'
+      server: '<%= yeoman.temp %>'
+    },
+
+    compass: {
+      options: {
+        sassDir: '<%= yeoman.src %>/styles',
+        cssDir: '<%= yeoman.src %>/styles',
+        generatedImagesDir: '<%= yeoman.temp %>/images/generated',
+        imagesDir: '<%= yeoman.src %>/images',
+        javascriptsDir: '<%= yeoman.src %>/scripts',
+        fontsDir: '<%= yeoman.src %>/styles/fonts',
+        importPath: '<%= yeoman.src %>/bower_components',
+        httpImagesPath: '/images',
+        httpGeneratedImagesPath: '/images/generated',
+        httpFontsPath: '/styles/fonts',
+        relativeAssets: false
+      },
+      build: {},
+      server: {
+        options: {
+          debugInfo: true
+        }
+      }
     },
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-        'sass:server'
+        'compass:server',
+        'copy:scripts'
       ],
       test: [
-        'sass:build'
+        'compass:build'
       ],
       build: [
-        'sass:build',
+        'compass:build',
         'imagemin',
         'svgmin'
       ]
@@ -149,7 +172,7 @@ module.exports = function (grunt) {
         options: {
           open: true,
           base: [
-            '.tmp',
+            '<%= yeoman.temp %>',
             '<%= yeoman.src %>'
           ],
           livereload: 35729
@@ -159,7 +182,7 @@ module.exports = function (grunt) {
         options: {
           port: 9001,
           base: [
-            '.tmp',
+            '<%= yeoman.temp %>',
             'test',
             '<%= yeoman.src %>'
           ]
@@ -198,13 +221,13 @@ module.exports = function (grunt) {
           },
           {
             expand: true,
-            cwd: '.tmp/images',
+            cwd: '<%= yeoman.temp %>/images',
             dest: '<%= yeoman.dist %>/images',
             src: ['generated/*']
           },
           {
             expand: true,
-            cwd: '.tmp',
+            cwd: '<%= yeoman.temp %>',
             dest: '<%= yeoman.dist %>',
             src: ['**/*.html']
           },
@@ -236,8 +259,14 @@ module.exports = function (grunt) {
       styles: {
         expand: true,
         cwd: '<%= yeoman.src %>/styles',
-        dest: '.tmp/styles/',
+        dest: '<%= yeoman.temp %>/styles/',
         src: '{,*/}*.css'
+      },
+      scripts: {
+        expand: true,
+        cwd: '<%= yeoman.src %>/scripts',
+        dest: '<%= yeoman.temp %>/scripts/',
+        src: '{,*/}*.js'
       }
     },
 
@@ -259,7 +288,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['*.html', 'views/{,*/}*.html'],
+          src: ['*.html', 'views/**/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -274,6 +303,32 @@ module.exports = function (grunt) {
             '**/*.{png,jpg,jpeg,gif}'
           ],
           dest: '<%= yeoman.dist %>/images'
+        }]
+      }
+    },
+
+
+    inline: {
+      server: {
+        options: {
+//          uglify: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.temp %>',
+          src: ['*.html', 'views/**/*.html'],
+          dest: '<%= yeoman.temp %>'
+        }]
+      },
+      build: {
+        options: {
+          uglify: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.dist %>',
+          src: ['*.html', 'views/**/*.html'],
+          dest: '<%= yeoman.dist %>'
         }]
       }
     },
@@ -507,21 +562,23 @@ module.exports = function (grunt) {
       },
       handlebars: {
         files: ['<%= yeoman.src %>/views/**/*.hbs'],
-        tasks: ['assemble'],
+        tasks: ['assemble', 'inline:server'],
         options: {
           livereload: true
         }
       },
       sass: {
         files: ['<%= yeoman.src %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer'],
+//        tasks: ['sass:server', 'autoprefixer'],
+        tasks: ['compass:server', 'autoprefixer'],
         options: {
           livereload: true
         }
       },
       scripts: {
         files: ['<%= yeoman.src %>/scripts/**/*.js'],
-        tasks: ['jshint:scripts', 'karma:unitCI'],
+//        tasks: ['jshint:scripts', 'karma:unitCI', 'copy:scripts', 'assemble', 'inline:server'],
+        tasks: ['jshint:scripts', 'copy:scripts', 'assemble', 'inline:server'],
         options: {
           livereload: true
         }
@@ -536,7 +593,7 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.src %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
+          '<%= yeoman.temp %>/styles/{,*/}*.css',
           '<%= yeoman.src %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
@@ -567,7 +624,9 @@ module.exports = function (grunt) {
       'wiredep',
       'replace:develop',
       'assemble',
+      // Have to do this before inlining so scripts are in the right place
       'concurrent:server',
+      'inline:server',
       'autoprefixer',
       'connect:develop',
       'watch'
@@ -608,7 +667,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'rev',
-    'usemin'/*,
+    'usemin',
+    'inline:build'/*,
     'htmlmin'*/
   ]);
 
