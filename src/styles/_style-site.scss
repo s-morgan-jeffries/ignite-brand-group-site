@@ -1,3 +1,5 @@
+$min-site-width: 1100px!default;
+
 html, body {
   height:100%;
   margin:0;
@@ -9,10 +11,11 @@ html, body {
 
 body {
   bgcolor: "#ffffff";
-  leftmargin: 0;
-  topmargin: 0;
-  marginwidth: 0;
-  marginheight: 0;
+//  leftmargin: 0;
+//  topmargin: 0;
+//  marginwidth: 0;
+//  marginheight: 0;
+  min-width: $min-site-width;
 }
 
 .homepage-content {
@@ -21,6 +24,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .simple-gallery {
