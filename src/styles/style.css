@@ -379,19 +379,81 @@ a:hover {
   background: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_header\.scss}line{font-family:\000031}}
-.header {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\000031}}
+.site-header {
   background: #FFFFFF;
+  color: #5F5B59;
   position: fixed;
   width: 100%;
   height: 100px;
-  margin: 0px auto;
+  margin: 0 auto;
   z-index: 1000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_header\.scss}line{font-family:\0000310}}
-.logo {
-  float: left;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000310}}
+.site-header__inner {
+  display: table;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000317}}
+.site-logo {
+  width: 22.2%;
+  height: 100%;
+  /*display: inline-block;*/
+  /*width: 286px;*/
+  vertical-align: middle;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000332}}
+.site-nav {
+  width: 77.8%;
+  height: 100%;
+  /*display: inline-block;*/
+  vertical-align: middle;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000344}}
+.site-nav__links {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000347}}
+.site-nav__link {
+  display: inline-block;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000350}}
+.site-nav__link a {
+  color: #5F5B59;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000356}}
+.site-nav__link--text {
+  margin-right: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000359}}
+.site-nav__link--icon {
+  margin-right: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_site_header\.scss}line{font-family:\0000362}}
+.site-nav__link:last-child {
+  margin: 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/search\.scss}line{font-family:\000031}}

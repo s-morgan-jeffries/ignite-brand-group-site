@@ -1,0 +1,130 @@
+<section class="contact-form-section" id="form_table">
+    <header style="text-align: center; margin-bottom: 15px;">
+        <h1>Like some orange with your branding?</h1>
+        <p>Tell us what you need using the form below - or give us a call at 646.237.6931.</p>
+    </header>
+
+    <form action="//forms.brace.io/{{contactEmail}}" method="post" class="contact-form" id="contact-us" name="contact-us">
+        {{!--<input type="hidden" name="_next" value="/thanks.html" />--}}
+        {{!--<form action="http://getsimpleform.com/messages?form_api_token=5c357c1e133bd03e59eeb2cd912a4df2" method="post" id="contact-us" name="contact-us">--}}
+        <div class="contact-form__row">
+            <div class="contact-form__left-col">
+                <label for="contact-form-name" class="contact-form__label">
+                    NAME*:
+                    <input type="text" class="contact-form__input" name="name" id="contact-form-name" />
+                </label>
+            </div>
+
+            <div class="contact-form__right-col">
+                <label for="contact-form-help" class="contact-form__label">
+                    HOW CAN WE HELP?*:
+                    <select name="help" class="contact-form__input" id="contact-form-help">
+                        <option value='I need a website.'>I need a website.</option>
+                        <option value='I need a logo.'>I need a logo.</option>
+                        <option value='I need a business name.'>I need a business name.</option>
+                        <option value='I need a photos.'>I need a photos.</option>
+                        <option value='I need a video.'>I need a video.</option>
+                        <option value='I need a copywriter'>I need a copywriter</option>
+                        <option value='I need to make my business easier to find online.'>I need to make my business easier to find online.</option>
+                        <option value='I need an online questionnaire/survey.'>I need an online questionnaire/survey.</option>
+                        <option value='I need an online appointment booking system.'>I need an online appointment booking system.</option>
+                        <option value='I need a mobile app.'>I need a mobile app.</option>
+                        <option value='I need a Google AdWords campaigns.'>I need a Google AdWords campaigns.</option>
+                        <option value="I'm a doctor and need to manage my online reputation.">I'm a doctor and need to manage my online reputation.</option>
+                        <option value='I need advice on my digital branding.'>I need advice on my digital branding.</option>
+                        <option value='I need paper collateral.'>I need paper collateral.</option>
+                        <option value='I need something else.'>I need something else.</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="contact-form__row">
+            <div class="contact-form__left-col">
+                <label for="contact-form-email" class="contact-form__label">
+                    EMAIL*:
+                    <input type="text" class="contact-form__input" name="_replyto" id="contact-form-email" />
+                </label>
+            </div>
+
+            <div class="contact-form__right-col">
+                <label for="contact-form-phone" class="contact-form__label">
+                    PHONE*:
+                    <input type="text" class="contact-form__input" name="phone" id="contact-form-phone" />
+                </label>
+            </div>
+        </div>
+
+
+        <div class="contact-form__row">
+            <label for="contact-form-message" class="contact-form__label">
+                MESSAGE:
+                <textarea class="contact-form__input contact-form__input--textarea" id="contact-form-message" name="message"></textarea>
+            </label>
+        </div>
+
+        <button class="contact-form__submit" type="submit">
+            <!-- t0d0: make this a background image -->
+            <img src="/images/send.png"/>
+        </button>
+    </form>
+</section>
+
+<style>
+    .contact-form-section {
+        /*display: table;*/
+        background-color: #e7e7e4;
+        /*width: 100%;*/
+        padding-bottom: 20px;
+    }
+    .contact-form {
+        width: 736px;
+        margin: 0 auto;
+    }
+    .contact-form__row {
+        text-align: left;
+        /*This should be 100% */
+        /*width: 100%;*/
+        margin-bottom: 5px;
+    }
+    .contact-form__row:last-of-type {
+        margin-bottom: 15px;
+    }
+    .contact-form__row:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+    .contact-form__left-col {
+        width: 45%;
+        float: left;
+    }
+    .contact-form__right-col {
+        width: 45%;
+        float: right;
+    }
+    .contact-form__label {
+        color: #F96503;
+        font-size: 19px;
+        font-family: 'gill sans', verdana;
+    }
+    .contact-form__input {
+        width: 100%;
+    }
+    /*.contact-form__text {*/
+
+    /*}*/
+    .contact-form__input--textarea {
+        /*width: 730px;*/
+        height:90px;
+    }
+    .contact-form__submit {
+        display: block;
+        height: 40px;
+        width: 90px;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+    }
+</style>
