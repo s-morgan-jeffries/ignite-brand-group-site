@@ -1,13 +1,16 @@
 $min-site-width: 1100px!default;
+$top-navbar-height: 100px!default;
 
 .site-header {
   background:#FFFFFF;
   color: #5F5B59;
-  position:fixed;
-  width:100%;
-  height:100px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: $top-navbar-height;
   min-width: $min-site-width;
-  margin:0 auto;
+  margin: 0 auto;
   z-index: 1000;
 }
 .site-header__inner {

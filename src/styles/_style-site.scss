@@ -1,4 +1,5 @@
 $min-site-width: 1100px!default;
+$top-navbar-height: 100px!default;
 
 html, body {
   height:100%;
@@ -16,28 +17,13 @@ body {
 //  marginwidth: 0;
 //  marginheight: 0;
   min-width: $min-site-width;
-}
-
-.homepage-content {
-  background-image:url('../images/the-secret-garden-orange-edition.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  width: 100%;
+  padding-top: $top-navbar-height;
 }
 
 .simple-gallery {
   z-index: 100;
 }
 
-.tagline {
-  background-image: url("../images/orange.png");
-//  font-family: "gill sans", verdana;
-  font-family: geneva, tahoma, 'trebuchet ms';
-  color: #FFFFFF;
-  font-size: 48px;
-}
 
 .who-we-are-banner {
   background-image: url("../images/banner-who-we-are.jpg");

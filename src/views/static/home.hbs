@@ -1,138 +1,60 @@
 ---
-layout: base_layout.hbs
+layout: standard_layout.hbs
 inlineScripts: ["scripts/contactForm.js"]
+bodyClasses:
+- secret-garden
 ---
-<div class="homepage-content">
+<div class="homepage-primary-content">
 
-    {{> site_header }}
+    <div class="homepage-primary-content-row">
+        <div class="tagline-block">
+            <h1 class="tagline">
+                We make businesses look distinctive.
+            </h1>
+        </div>
+    </div>
 
-    {{> top-spacer }}
+    <div class="homepage-primary-content-row">
+        <div class="outside-the-box-block">
+            <h1>We work with doctors and lawyers who think outside of the box.</h1>
+            <img class="outside-the-box-img" src="images/we-work-with-doctors-and-lawyers-who-think-outside-of-the-box.png" alt="We work with doctors and lawyers who think outside of the box."/>
+            <p>
+                You're a superhero in your industry. We help communicate that, so the need for your services becomes a want.
+            </p>
+        </div>
+    </div>
 
-    <table width="100%" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
-
-        <tr width="100%">
-            <td width="100%" height="100"></td>
-        </tr>
-
-        <tr width="100%">
-            <td width="100%">
-                <table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
-                    <td width="50"></td>
-
-                    <td width="1000" height="200" align="center" valign="center">
-                        <table width="1000" height="200" align="center" valign="top" border="0" cellpadding="30" cellspacing="0" class="tagline">
-                            <tr>
-                                <td width="1000" height="200" align="center" valign="center">
-                                    {{!--<font family="'gill sans', verdana" color="#FFFFFF" size="10">We make businesses look distinctive.</font>--}}
-                                    We make businesses look distinctive.
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-
-                    <td width="50"></td>
-                </tr></table>
-            </td>
-        </tr>
-
-
-        <tr width="100%">
-            <td width="100%" height="100"></td>
-        </tr>
-
-
-        <tr width="100%">
-            <td width="100%">
-                <table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
-                    <td width="50"></td>
-
-                    <td width="600" align="center" valign="center">
-                        <table width="600" align="center" valign="top" border="0" cellpadding="30" cellspacing="0" bgcolor="#FFFFFF"><tr>
-
-                            <td width="600" align="left" valign="top">
-                                <h1>We work with doctors and lawyers who think outside of the box.</h1>
-                                <p><img src="images/we-work-with-doctors-and-lawyers-who-think-outside-of-the-box.png" style="padding-right: 20px" align="left" height="100" border="0" alt="We work with doctors and lawyers who think outside of the box."/>You're a superhero in your industry. We help communicate that, so the need for your services becomes a want.</p>
-                            </td>
-
-                        </tr></table>
-                    </td>
-
-                    <td width="450"></td>
-                </tr></table>
-            </td>
-        </tr>
-
-
-        <tr width="100%">
-            <td width="100%" height="100"></td>
-        </tr>
-
-
-        <tr width="100%">
-            <td width="100%">
-                <table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
-                    <td width="450"></td>
-
-                    <td width="600" align="center" valign="center">
-                        <table width="600" align="center" valign="top" border="0" cellpadding="30" cellspacing="0" bgcolor="#FFFFFF"><tr>
-
-                            <td width="600" align="right" valign="top">
-                                <img src="images/build-a-brand-not-just-a-website.png" height="100" border="0" alt="Build a brand, not just a website."/>
-                                <h1>Build a brand, not just a website.</h1>
-                                <p>Make the human connection needed to get not just any old client, but the right client. <a href="what-we-do.html">Our services</a> include logo and web design, video and image production, copywriting, pay-per-click advertising, mobile apps, <a href="what-we-do.html">and more</a>.</p>
-                            </td>
-
-                        </tr></table>
-                    </td>
-
-                    <td width="50"></td>
-                </tr></table>
-            </td>
-        </tr>
-
-
-        <tr width="100%">
-            <td width="100%" height="100"></td>
-        </tr>
-
-    </table>
-
-
-    <table width="100%" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-        <tr width="100%">
-            <td width="100%">
-                <table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0"><tr>
-                    <td width="50"></td>
-
-                    <td width="1000" align="left" valign="center">
-                        <table width="1000" align="center" valign="top" border="0" cellpadding="30" cellspacing="0"><tr>
-
-                            <td width="33%" align="center" valign="top">
-                                <a href="/services/portfolio.html" class="sprite sprite--home sprite--portfolio-home">Portfolio</a>
-                                <h3><a href="/services/portfolio.html">Portfolio</a></h3>
-                            </td>
-
-                            <td width="33%" align="center" valign="top">
-                                <a href="/services/what-we-do.html" class="sprite sprite--home sprite--services-home">Services</a>
-                                <h3><a href="/services/what-we-do.html">Services</a></h3>
-                            </td>
-
-                            <td width="33%" align="center" valign="top">
-                                <a href="http://www.talkingoranges.com/" target="blank" class="sprite sprite--home sprite--oranges-home">Talking Oranges</a>
-                                <h3><a href="http://www.talkingoranges.com/" target="blank">Talking Oranges</a></h3>
-                            </td>
-
-                        </tr></table>
-                    </td>
-
-                    <td width="50"></td>
-                </tr></table>
-            </td>
-        </tr>
-    </table>
-
-    {{> contact_form }}
-
-    {{> site_footer }}
-
+    <div class="homepage-primary-content-row">
+        <div class="build-a-brand-block">
+            <img src="images/build-a-brand-not-just-a-website.png" height="100" border="0" alt="Build a brand, not just a website."/>
+            <h1>Build a brand, not just a website.</h1>
+            <p>
+                Make the human connection needed to get not just any old client, but the right client.
+                <a href="what-we-do.html">Our services</a> include logo and web design, video and image
+                production, copywriting, pay-per-click advertising, mobile apps,
+                <a href="what-we-do.html">and more</a>.
+            </p>
+        </div>
+    </div>
 </div>
+
+{{!-- Links section --}}
+<section class="homepage-links-section">
+    <div class="homepage-links-content">
+        <div class="homepage-links-link">
+            <a href="/services/portfolio.html" class="sprite sprite--home sprite--portfolio-home">Portfolio</a>
+            <h3><a href="/services/portfolio.html">Portfolio</a></h3>
+        </div>
+        <div class="homepage-links-link">
+            <a href="/services/what-we-do.html" class="sprite sprite--home sprite--services-home">Services</a>
+            <h3><a href="/services/what-we-do.html">Services</a></h3>
+        </div>
+        <div class="homepage-links-link">
+            <a href="http://www.talkingoranges.com/" target="blank" class="sprite sprite--home sprite--oranges-home">Talking Oranges</a>
+            <h3><a href="http://www.talkingoranges.com/" target="blank">Talking Oranges</a></h3>
+        </div>
+    </div>
+</section>
+
+{{!-- Contact form (sufficiently complicated to refactor into its own partial) --}}
+{{> contact_form }}
