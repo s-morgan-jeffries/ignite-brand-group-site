@@ -1,459 +1,93 @@
 ---
 layout: standard_layout.hbs
-firstRowAnswers: ["website", "logo", "name", "headshot"]
-secondRowAnswers: ["video", "editor"]
-thirdRowAnswers: ["seo", "questionnaire", "booking", "mobile"]
-fourthRowAnswers: ["adword", "reputation"]
-fifthRowAnswers: ["advice", "paper", "other"]
 ---
-
-<table width="1100" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
-
-<tr width="1100">
-    <td width="50"></td>
-
-    <td width="1000" height="500" align="left" valign="center">
-        <br/>
-        <h1>Services</h1>
-
-        {{> servicesTabs }}
-        <br/><br/>
-
-        <table width="1000" height="500" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" class="what-we-do-banner"><tr>
-
-            <td width="50"></td>
-
-            <td width="440" align="left" valign="bottom">
-                <table width="440" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
-                    <tr>
-                        <td colspan="3" width="440" height="20"></td>
-                    </tr>
-
-                    <tr>
-                        <td width="20"></td>
-
-                        <td width="400" align="left" valign="center">
-                            <h1>What We Do</h1>
-                            <p>We offer a range of branding services, and we're always adding more to meet our clients' needs. Check out the links below to learn what we can do for you. Got something in mind that's not listed here? <a href="/contact-us.html">Tell us.</a> We just might be able to help you out.</p>
-                        </td>
-
-                        <td width="20"></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="3" width="440" height="20"></td>
-                    </tr>
-                </table>
-                <br/><br/>
-            </td>
-
-            <td width="560" align="right" valign="center"></td>
-
-            <td width="50"></td>
-
-        </tr></table>
-    </td>
-
-    <td width="50"></td>
-</tr>
-
-
-<tr width="1100">
-    <td colspan="3" width="1100" height="50"></td>
-</tr>
-
-
-<tr width="1100">
-    <td width="50"></td>
-
-    <td width="1000" align="left" valign="top">
-        <h1>How Can We Help?</h1>
-        <br/>
-    </td>
-
-    <td width="50"></td>
-</tr>
-
-
-
-<tr width="1100">
-<td width="50"></td>
-
-<td width="1000" align="center" valign="top">
-<table width="1000" align="center" valign="top" border="0" cellpadding="0" cellspacing="0">
-
-
-<tr>
-    <td colspan="7" width="1000" height="40" align="left" valign="top">
-        <h3>Getting Online</h3>
-    </td>
-</tr>
-
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#inArray firstRowAnswers answerId}}
-        {{!--<a name="answer"></a>--}}
-            {{> servicesAnswer }}
-        {{/inArray}}
-        <a href="/services/help/i-need-a-website.html#answer"><img src="/images/help-i-need-a-website.png" width="220" height="120" border="0" alt="I need a website"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-a-website.html#answer">I need a website.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-a-logo.html#answer"><img src="/images/help-i-need-a-logo.png" width="220" height="120" border="0" alt="I need a logo"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-a-logo.html#answer">I need a logo.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-a-business-name.html#answer"><img src="/images/help-i-need-a-business-name.png" width="220" height="120" border="0" alt="I need a business name"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-a-business-name.html#answer">I need a business name.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-a-professional-headshot.html#answer"><img src="/images/help-i-need-a-professional-headshot.png" width="220" height="120" border="0" alt="I need a professional headshot, photographs, or other images for my website"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-a-professional-headshot.html#answer">I need a professional headshot, photographs, or other images for my website.</a></p>
-    </td>
-</tr>
-
-
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#is answerId "website"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "logo"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "name"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "headshot"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-</tr>
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#inArray secondRowAnswers answerId}}
-        {{!--<a name="answer"></a>--}}
-            {{> servicesAnswer }}
-        {{/inArray}}
-        <a href="/services/help/i-need-a-video.html#answer"><img src="/images/help-i-need-a-video.png" width="220" height="120" border="0" alt="I need a video"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-a-video.html#answer">I need a video.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-an-editor-or-a-copywriter.html#answer"><img src="/images/help-i-need-an-editor-or-a-copywriter.png" width="220" height="120" border="0" alt="I need a copywriter"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-an-editor-or-a-copywriter.html#answer">I need an editor or a copywriter.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-</tr>
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#is answerId "video"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "editor"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-</tr>
-
-
-<tr>
-    <td colspan="7" width="1000" height="40" align="left" valign="top">
-        <h3>Improving Your Online Presence</h3>
-    </td>
-</tr>
-
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#inArray thirdRowAnswers answerId}}
-        {{!--<a name="answer"></a>--}}
-            {{> servicesAnswer }}
-        {{/inArray}}
-        <a href="/services/help/i-need-to-make-my-business-easier-to-find-online.html#answer"><img src="/images/help-i-need-to-make-my-business-easier-to-find-online.png" width="220" height="120" border="0" alt="I need to make my business easier to find online"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-to-make-my-business-easier-to-find-online.html#answer">I need to make my business easier to find online.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-an-online-questionnaire-or-survey-form.html#answer"><img src="/images/help-i-need-an-online-questionnaire-or-survey-form.png" width="220" height="120" border="0" alt="I need an online questionnaire or survey form"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-an-online-questionnaire-or-survey-form.html#answer">I need an online questionnaire or survey form.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-an-online-appointment-booking-system.html#answer"><img src="/images/help-i-need-an-online-appointment-booking-system.png" width="220" height="120" border="0" alt="I need an online appointment booking system"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-an-online-appointment-booking-system.html#answer">I need an online appointment booking system.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-a-mobile-app.html#answer"><img src="/images/help-i-need-a-mobile-app.png" width="220" height="120" border="0" alt=" need a mobile app"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-a-mobile-app.html#answer">I need a mobile app.</a></p>
-    </td>
-</tr>
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#is answerId "seo"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "questionnaire"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "booking"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "mobile"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-</tr>
-
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#inArray fourthRowAnswers answerId}}
-        {{!--<a name="answer"></a>--}}
-            {{> servicesAnswer }}
-        {{/inArray}}
-        <a href="/services/help/i-need-to-manage-my-online-advertising-google-adwords-campaigns.html#answer"><img src="/images/help-i-need-to-manage-my-online-advertising-google-adwords-campaigns.png" width="220" height="120" border="0" alt="I need to manage my online advertising Google AdWords campaigns"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-to-manage-my-online-advertising-google-adwords-campaigns.html#answer">I need to manage my online advertising Google AdWords campaigns.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/im-a-doctor-and-need-to-manage-my-online-reputation.html#answer"><img src="/images/help-im-a-doctor-and-need-to-manage-my-online-reputation.png" width="220" height="120" border="0" alt="I'm a doctor and need to manage my online reputation"/></a>
-        <br/>
-        <p><a href="/services/help/im-a-doctor-and-need-to-manage-my-online-reputation.html#answer">I'm a doctor and need to manage my online reputation.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-</tr>
-
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#is answerId "adwords"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "reputation"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-</tr>
-
-
-<tr>
-    <td colspan="7" width="1000" height="40" align="left" valign="top">
-        <h3>Other Services</h3>
-    </td>
-</tr>
-
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#inArray fifthRowAnswers answerId}}
-            {{> servicesAnswer }}
-        {{/inArray}}
-        <a href="/services/help/i-need-advice.html#answer"><img src="/images/help-i-need-advice.png" width="220" height="120" border="0" alt="I need advice on how to improve my website/ how to use social media/ how to figure out what's unique about my business/ some other brand strategy concern"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-advice.html#answer">I need advice on how to improve my website/ how to use social media/ how to figure out what's unique about my business/ some other brand strategy concern.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-business-cards-brochures-or-other-paper-collateral.html#answer"><img src="/images/help-i-need-business-cards-brochures-or-other-paper-collateral.png" width="220" height="120" border="0" alt="I need business cards, brochures, or other paper collateral"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-business-cards-brochures-or-other-paper-collateral.html#answer">I need business cards, brochures, or other paper collateral.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        <a href="/services/help/i-need-something-else-not-listed-here.html#answer"><img src="/images/help-i-need-something-else-not-listed-here.png" width="220" height="120" border="0" alt="I need something else not listed here"/></a>
-        <br/>
-        <p><a href="/services/help/i-need-something-else-not-listed-here.html#answer">I need something else not listed here.</a></p>
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-</tr>
-
-<tr>
-    <td width="220" align="left" valign="top">
-        {{#is answerId "advice"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "paper"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-        {{#is answerId "other"}}
-            {{{answerHtml}}}
-            {{!--{{> answer}}--}}
-            <br/><br/>
-        {{/is}}
-    </td>
-
-    <td width="40"></td>
-
-    <td width="220" align="left" valign="top">
-    </td>
-</tr>
-
-</table>
-</td>
-
-<td width="50"></td>
-</tr>
-
-
-</table>
+<div class="services-content">
+
+    <h1 class="services-header">
+        <a class="highlight" href="/services/what-we-do.html">
+            Services
+        </a>
+    </h1>
+
+    {{!-- This is fine, it doesn't use table elements --}}
+    {{> servicesTabsNew }}
+
+    <div class="what-we-do-banner">
+        <div class="what-we-do-nested-banner">
+            <h1>What We Do</h1>
+            <p>
+                We offer a range of branding services, and we're always adding more to meet our clients' needs. Check
+                out the links below to learn what we can do for you. Got something in mind that's not listed here?
+                <a class="highlight" href="/contact-us.html">Tell us.</a> We just might be able to help you out.
+            </p>
+        </div>
+    </div>
+
+    <section class="available-services">
+        <header class="available-services-header">
+            <h1>How Can We Help?</h1>
+        </header>
+        {{#each whatWeDo}}
+            <section>
+                <header>
+                    <h3>
+                        {{sectionHeader}}
+                    </h3>
+                </header>
+                {{#each services}}
+                    {{#is ../../answerId serviceId}}
+                        <a name="answer"></a>
+                    {{/is}}
+                    <div class="service-link">
+                        <a href="{{url}}#answer">
+                            <img src="{{image}}" alt="{{image}}"/>
+                            <p class="highlight">{{text}}</p>
+                        </a>
+                        {{#is ../../answerId serviceId}}
+                            <div>
+                                {{{../../../answerHtml}}}
+                            </div>
+                        {{/is}}
+                    </div>
+                {{/each}}
+            </section>
+        {{/each}}
+    </section>
+</div>
+
+<style>
+    .services-content {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .services-header {
+        /*display: block;*/
+        /*line-height: 0;*/
+        vertical-align: bottom;
+    }
+    .what-we-do-banner {
+        /*noinspection CssUnknownTarget*/
+        background-image: url("/images/banner-what-we-do.jpg");
+        width: 1000px;
+        height: 500px;
+        margin: 0 auto 50px auto;
+        /*vertical-align: bottom;*/
+        /*padding: 40px 40px;*/
+        position: relative;
+    }
+    .what-we-do-nested-banner {
+        background-color: #FFFFFF;
+        width: 440px;
+        position: absolute;
+        bottom: 42px;
+        left: 42px;
+        padding: 20px 20px;
+    }
+    .service-link {
+        width: 220px;
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 20px;
+    }
+</style>

@@ -10,140 +10,33 @@ layout: standard_layout.hbs
                 Here are some frequently asked questions. If you can't find the answer to your question here,
                 <a class="highlight" href="/contact-us.html">just ask!</a> We're happy to help.
             </p>
-            <img src="/images/faq-intro.png" class="faq-subheader__img" alt="Valencia Orange answering your frequently asked questions (FAQs)."/>
+            <img src="/images/faq/intro.png" class="faq-subheader__img" alt="Valencia Orange answering your frequently asked questions (FAQs)."/>
         </div>
     </header>
 
-    {{#is faqCategory "about-branding"}}
-        <a class="faq-answer-anchor" name="answer"></a>
-    {{/is}}
-    <section class="faq-category">
-        <div class="faq-list">
-            <header>
-                <h3>About Branding and Internet Terminology</h3>
-            </header>
-            <ul>
-                <li>
-                    <a href="/faq/what-is-branding.html#answer">What is branding?</a>
-                </li>
-                <li>
-                    <a href="/faq/what-is-an-avatar.html#answer">What is an avatar?</a>
-                </li>
-                <li>
-                    <a href="/faq/what-is-the-difference-between-a-website-and-a-webpage.html#answer">What is the difference between a website and a webpage?</a>
-                </li>
-                <li>
-                    <a href="/faq/what-is-the-difference-between-website-hosting-domain-names-and-urls.html#answer">What is the difference between website hosting, domain names, and URLs?</a>
-                </li>
-                <li>
-                    <a href="/faq/what-is-the-difference-between-seo-and-sem.html#answer">What is the difference between SEO and SEM?</a>
-                </li>
-                <li>
-                    <a href="/faq/what-is-pay-per-click-advertising.html#answer">What is pay-per-click advertising (PPC)?</a>
-                </li>
-            </ul>
-        </div>
-
-        {{#is faqCategory "about-branding"}}
-            <img class="faq-arrow" src="/images/faq-arrow-0{{ answerNumber }}.png"alt=""/>
-            <div class="faq-answer faq-answer--branding">
-                {{!--<a class="faq-answer-anchor" name="answer">&nbsp;</a>--}}
-                {{{ answerHtml }}}
-            </div>
+    {{#each faq.category}}
+        {{#is name ../faqCategory}}
+            <a class="faq-answer-anchor" name="answer"></a>
         {{/is}}
-    </section>
-
-    {{#is faqCategory "about-services"}}
-        <a class="faq-answer-anchor" name="answer"></a>
-    {{/is}}
-    <section class="faq-category">
-        <div class="faq-list">
-            <header>
-                <h3>About Our Services</h3>
-            </header>
-            <ul>
-                <li>
-                    <a href="/faq/how-quickly-can-you-complete-my-project.html#answer">How quickly can you complete my project?</a>
-                </li>
-                <li>
-                    <a href="/faq/how-much-do-your-services-cost.html#answer">How much do your services cost?</a>
-                </li>
-                <li>
-                    <a href="/faq/do-you-have-different-payment-plans.html#answer">Do you have different payment plans?</a>
-                </li>
-                <li>
-                    <a href="/faq/do-you-work-with-clients-outside-of-new-york.html#answer">Do you work with clients outside of New York?</a>
-                </li>
-                <li>
-                    <a href="/faq/can-you-still-help-me.html#answer">I have a problem or an idea for a project that isn't listed on your Services page. Can you still help me?</a>
-                </li>
-            </ul>
-        </div>
-
-        {{#is faqCategory "about-services"}}
-            <img class="faq-arrow" src="/images/faq-arrow-services-0{{ answerNumber }}.png" alt=""/>
-            <div class="faq-answer faq-answer--services">
-                {{!--<a class="faq-answer-anchor" name="answer">&nbsp;</a>--}}
-                {{{ answerHtml }}}
+        <section class="faq-category">
+            <div class="faq-list">
+                <header>
+                    <h3>{{text}}</h3>
+                </header>
+                <ul>
+                    {{#each questions}}
+                        <li>
+                            <a href="{{url}}#answer">{{text}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
             </div>
-        {{/is}}
-    </section>
-
-    {{#is faqCategory "about-oranges"}}
-        <a class="faq-answer-anchor" name="answer"></a>
-    {{/is}}
-    <section class="faq-category">
-        <div class="faq-list">
-            <header>
-                <h3>About Our Oranges</h3>
-            </header>
-            <ul>
-                <li>
-                    <a href="/faq/what-is-talking-oranges.html#answer">What is Talking Oranges?</a>
-                </li>
-                <li>
-                    <a href="/faq/why-oranges.html#answer">Why oranges?</a>
-                </li>
-                <li>
-                    <a href="/faq/do-you-have-any-merchandise-for-sale.html#answer">I love your oranges! Do you have any merchandise for sale?</a>
-                </li>
-            </ul>
-        </div>
-
-        {{#is faqCategory "about-oranges"}}
-            <img class="faq-arrow" src="/images/faq-arrow-oranges-0{{ answerNumber }}.png" alt=""/>
-            <div class="faq-answer faq-answer--oranges">
-                {{!--<a class="faq-answer-anchor" name="answer">&nbsp;</a>--}}
-                {{{ answerHtml }}}
-            </div>
-        {{/is}}
-    </section>
-
-    {{#is faqCategory "about-other"}}
-        <a class="faq-answer-anchor" name="answer"></a>
-    {{/is}}
-    <section class="faq-category">
-        <div class="faq-list">
-            <header>
-                <h3>About Everything Else</h3>
-            </header>
-            <ul>
-                <li>
-                    <a href="/faq/how-can-i-ask-you.html#answer">I have a question that isn't answered here. How can I ask you?</a>
-                </li>
-                <li>
-                    <a href="/faq/how-do-i-contact-you.html#answer">I want to learn more about how you can help me. How do I contact you?</a>
-                </li>
-            </ul>
-        </div>
-
-        {{#is faqCategory "about-other"}}
-            <img class="faq-arrow" src="/images/faq-arrow-other-0{{ answerNumber }}.png" alt=""/>
-            <div class="faq-answer faq-answer--other">
-                {{!--<a class="faq-answer-anchor" name="answer">&nbsp;</a>--}}
-                {{{ answerHtml }}}
-            </div>
-        {{/is}}
-    </section>
-
+            {{#is name ../faqCategory}}
+                <img class="faq-arrow" src="/images/faq/arrows/{{name}}/faq-arrow-{{name}}-0{{ ../../answerNumber }}.png" alt="This should be an arrow."/>
+                <div class="faq-answer faq-answer--branding">
+                    {{{ ../../answerHtml }}}
+                </div>
+            {{/is}}
+        </section>
+    {{/each}}
 </div>

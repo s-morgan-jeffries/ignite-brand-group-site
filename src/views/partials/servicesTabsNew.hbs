@@ -1,0 +1,33 @@
+---
+tabNames:
+- portfolio
+- how-we-work
+- what-we-do
+---
+<nav class="services-nav">
+    <ul class="services-nav-tabs">
+        {{#each servicesTabs.tabNames}}
+            <li>
+                <a href="/services/{{this}}.html" class="sprite sprite--tabs sprite--{{this}}-tab services-nav-tab">{{this}}</a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>
+
+<style>
+    .services-nav {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .services-nav:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .services-nav-tabs {
+        list-style: none;
+    }
+    .services-nav-tab {
+        margin-left: 2px;
+    }
+</style>

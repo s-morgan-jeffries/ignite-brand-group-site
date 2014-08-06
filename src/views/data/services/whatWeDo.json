@@ -1,0 +1,107 @@
+[
+  {
+    "sectionHeader": "Getting Online",
+    "services": [
+      {
+        "text": "I need a website.",
+        "image": "/images/help-i-need-a-website.png",
+        "url": "/services/help/i-need-a-website.html",
+        "serviceId": "website"
+      },
+      {
+        "text": "I need a logo.",
+        "image": "/images/help-i-need-a-logo.png",
+        "url": "/services/help/i-need-a-logo.html",
+        "serviceId": "logo"
+      },
+      {
+        "text": "I need a business name.",
+        "image": "/images/help-i-need-a-business-name.png",
+        "url": "/services/help/i-need-a-business-name.html",
+        "serviceId": "name"
+      },
+      {
+        "text": "I need a professional headshot, photographs, or other images for my website.",
+        "image": "/images/help-i-need-a-professional-headshot.png",
+        "url": "/services/help/i-need-a-professional-headshot.html",
+        "serviceId": "headshot"
+      },
+      {
+        "text": "I need a video.",
+        "image": "/images/help-i-need-a-video.png",
+        "url": "/services/help/i-need-a-video.html",
+        "serviceId": "video"
+      },
+      {
+        "text": "I need an editor or a copywriter.",
+        "image": "/images/help-i-need-an-editor-or-a-copywriter.png",
+        "url": "/services/help/i-need-an-editor-or-a-copywriter.html",
+        "serviceId": "editor"
+      }
+    ]
+  },
+  {
+    "sectionHeader": "Improving Your Online Presence",
+    "services": [
+      {
+        "text": "I need to make my business easier to find online.",
+        "image": "/images/help-i-need-to-make-my-business-easier-to-find-online.png",
+        "url": "/services/help/i-need-to-make-my-business-easier-to-find-online.html",
+        "serviceId": "seo"
+      },
+      {
+        "text": "I need an online questionnaire or survey form.",
+        "image": "/images/help-i-need-an-online-questionnaire-or-survey-form.png",
+        "url": "/services/help/i-need-an-online-questionnaire-or-survey-form.html",
+        "serviceId": "questionnaire"
+      },
+      {
+        "text": "I need an online appointment booking system.",
+        "image": "/images/help-i-need-an-online-appointment-booking-system.png",
+        "url": "/services/help/i-need-an-online-appointment-booking-system.html",
+        "serviceId": "booking"
+      },
+      {
+        "text": "I need a mobile app.",
+        "image": "/images/help-i-need-a-mobile-app.png",
+        "url": "/services/help/i-need-a-mobile-app.html",
+        "serviceId": "mobile"
+      },
+      {
+        "text": "I need to manage my online advertising Google AdWords campaigns.",
+        "image": "/images/help-i-need-to-manage-my-online-advertising-google-adwords-campaigns.png",
+        "url": "/services/help/i-need-to-manage-my-online-advertising-google-adwords-campaigns.html",
+        "serviceId": "adwords"
+      },
+      {
+        "text": "I'm a doctor and need to manage my online reputation.",
+        "image": "/images/help-im-a-doctor-and-need-to-manage-my-online-reputation.png",
+        "url": "/services/help/im-a-doctor-and-need-to-manage-my-online-reputation.html",
+        "serviceId": "reputation"
+      }
+    ]
+  },
+  {
+    "sectionHeader": "Other Services",
+    "services": [
+      {
+        "text": "I need advice on how to improve my website/ how to use social media/ how to figure out what's unique about my business/ some other brand strategy concern.",
+        "image": "/images/help-i-need-advice.png",
+        "url": "/services/help/i-need-advice.html",
+        "serviceId": "advice"
+      },
+      {
+        "text": "I need business cards, brochures, or other paper collateral.",
+        "image": "/images/help-i-need-business-cards-brochures-or-other-paper-collateral.png",
+        "url": "/services/help/i-need-business-cards-brochures-or-other-paper-collateral.html",
+        "serviceId": "paper"
+      },
+      {
+        "text": "I need something else not listed here.",
+        "image": "/images/help-i-need-something-else-not-listed-here.png",
+        "url": "/services/help/i-need-something-else-not-listed-here.html",
+        "serviceId": "other"
+      }
+    ]
+  }
+]

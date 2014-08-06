@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         lunr: {},
         partials: ['<%= yeoman.src %>/views/partials/*.hbs'],
         layoutdir: '<%= yeoman.src %>/views/layouts',
-        data: '<%= yeoman.src %>/views/data/data.json',
+        data: '<%= yeoman.src %>/views/data/**/*.json',
         flatten: true
       },
 //      home: {
