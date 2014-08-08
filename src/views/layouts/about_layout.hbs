@@ -1,0 +1,46 @@
+---
+layout: standard_layout.hbs
+---
+<div class="about-content">
+
+    <h1 class="about-header">
+        <a class="highlight" href="/services/what-we-do.html">
+            {{header.title}}
+        </a>
+    </h1>
+
+    {{!-- This is fine, it doesn't use table elements --}}
+    {{> aboutTabs }}
+
+    <div class="about-banner">
+        <img src="{{header.image}}">
+        {{#if header.inset}}
+            <div class="about-banner-inset">
+                <h1>{{{header.inset.title}}}</h1>
+                <p>
+                    {{{header.inset.text}}}
+                </p>
+            </div>
+        {{/if}}
+    </div>
+
+    {{> body }}
+</div>
+
+<style>
+    .about-content {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .about-banner {
+        position: relative;
+    }
+    .about-banner-inset {
+        background-color: #FFFFFF;
+        width: 260px;
+        position: absolute;
+        bottom: 135px;
+        left: 45px;
+        padding: 20px 20px;
+    }
+</style>

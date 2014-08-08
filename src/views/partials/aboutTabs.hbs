@@ -1,0 +1,55 @@
+---
+-   text: Work With Us
+    url: work-with-us
+-   text: What We Believe
+    url: what-we-believe
+-   text: Why We Work
+    url: why-we-work
+-   text: Who We Are
+    url: who-we-are
+---
+{{!--tabs:--}}
+{{!--{{#each about_tabs.tabNames}}--}}
+    {{!--<a href="/about/{{this}}.html" class="sprite sprite--tabs sprite--{{this}}-tab">{{this}}</a>--}}
+{{!--{{/each}}--}}
+
+<nav class="about-nav">
+    <ul class="about-nav-tabs">
+        {{#each aboutTabs}}
+            <li>
+                <a href="/about/{{this.url}}.html" class="about-nav-tab">{{this.text}}</a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>
+
+<style>
+    .about-nav {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .about-nav:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .about-nav-tabs {
+        list-style: none;
+    }
+    .about-nav-tab {
+        display: block;
+        width: 130px;
+        height: 30px;
+        margin-left: 2px;
+        float: right;
+        border: 1px solid grey;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'gill sans', verdana;
+        font-weight: bolder;
+    }
+    .about-nav-tab:hover {
+        text-decoration: none;
+        background-color: #808080;
+    }
+</style>
