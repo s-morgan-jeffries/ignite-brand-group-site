@@ -1,0 +1,40 @@
+---
+layout: standard_layout.hbs
+pageTitle: News
+---
+<div class="news-content">
+    <h1>News</h1>
+    <p>
+        We'll make big announcements here. For news, analysis, and other tidbits about all things branding and tech-related, visit our blog, <a href="/http://www.talkingoranges.com" target="blank">Talking Oranges</a>. For day-to-day peeks at what we're doing or reading, connect with us on <a href="/https://twitter.com/ignitebrand" target="blank">Twitter</a> or <a href="/https://www.facebook.com/IgniteBrandGroup" target="blank">Facebook</a>.
+    </p>
+    <img src="/images/news/news-intro.png" alt="Otto von Oranges bringing the news."/>
+</div>
+
+{{#each news}}
+    <article class="news-article">
+        <div class="news-article-text {{#if articleTextClass}}news-article-text--{{articleTextClass}}{{/if}}">
+            <header>
+                <h1><time datetime="{{formatDate date "%Y-%m-%d"}}">{{formatDate date "%B %e, %Y"}}</time></h1>
+            </header>
+            {{#each text}}
+                <p>{{{this}}}</p>
+            {{/each}}
+        </div>
+        <img class="news-article-image" src="{{image.src}}" alt="{{title}}">
+    </article>
+{{/each}}
+
+<style>
+    .news-article-text {
+        display: inline-block;
+    }
+    .news-article-text--wide {
+        width: 650px;
+    }
+    .news-article-text--narrow {
+        width: 475px;
+    }
+    .news-article-image {
+        display: inline-block;
+    }
+</style>

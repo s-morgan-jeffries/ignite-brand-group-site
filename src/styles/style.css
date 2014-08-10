@@ -21,19 +21,9 @@ body {
   z-index: 100;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000335}}
-.who-we-are-banner {
-  background-image: url("../images/banner-who-we-are.jpg");
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000339}}
 .how-we-work-banner {
   background-image: url("../images/banner-how-we-work.jpg");
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000343}}
-.contact-us-banner {
-  background-image: url("../images/banner-contact-us.jpg");
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/_style-site\.scss}line{font-family:\0000347}}

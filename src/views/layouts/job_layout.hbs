@@ -1,0 +1,65 @@
+---
+layout: about_layout.hbs
+jobTitle: <%= _.titleize(_.humanize(jobId)) %>
+pageTitle: <%= jobTitle %> Application
+header:
+    title: Work With Us
+    image: /images/banner-work-with-us.jpg
+---
+<div class="job-description-container">
+    {{#withProp jobs jobId}}
+        <section>
+            <header>
+                <h1>{{../jobTitle}}</h1>
+            </header>
+            <section>
+                <header>
+                    <h3>Summary</h3>
+                </header>
+                {{#each summary}}
+                    <p>{{this}}</p>
+                {{/each}}
+            </section>
+            <section>
+                <header>
+                    <h3>Primary Responsibilities</h3>
+                </header>
+                <ul>
+                    {{#each responsibilities}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h3>Desired Qualities</h3>
+                </header>
+                <ul>
+                    {{#each qualities}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h3>Desired Qualifications</h3>
+                </header>
+                <ul>
+                    {{#each qualifications}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </section>
+        </section>
+    {{/withProp}}
+    <p>
+        Submit your application through the "Application Form" on the right-hand side of this page. If you have any
+        questions or concerns, contact us at <a href="mailto:info@ignitebrandgroup.com">info@ignitebrandgroup.com</a>.
+    </p>
+</div>
+
+<style>
+    .job-description-container {
+        width: 650px;
+    }
+</style>

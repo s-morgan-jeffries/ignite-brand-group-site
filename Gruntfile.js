@@ -39,10 +39,11 @@ module.exports = function (grunt) {
 //        assets: 'assets',
         // No plugins for now
 //        plugins: ['assemble-middleware-lunr'],
+        helpers: ['./lib/customHelpers.js'],
         lunr: {},
         partials: ['<%= yeoman.src %>/views/partials/*.hbs'],
         layoutdir: '<%= yeoman.src %>/views/layouts',
-        data: '<%= yeoman.src %>/views/data/**/*.json',
+        data: '<%= yeoman.src %>/views/data/**/*.{json,yml}',
         flatten: true
       },
 //      home: {

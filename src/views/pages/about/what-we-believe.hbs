@@ -1,0 +1,23 @@
+---
+layout: about_layout.hbs
+pageTitle: What We Believe
+header:
+    title: What We Believe
+    image: /images/banner-what-we-believe.jpg
+sections:
+-   title: Professional doesn't have to mean stodgy.
+    text: Doctors and lawyers do great things for society that we couldn't do without. But that doesn't mean you have to fit yourself into the same mold as everyone else. Show a little flair and be memorable, in a good way.
+    sectionTextClass: wide
+    image: /images/why-we-work-professional-doesnt-have-to-mean-stodgy.png
+-   title: Art and design are fun, serious, and useful. All at the same time.
+    text: Our background in visual and verbal arts informs everything we do, whether it's designing a logo or fine-tuning brand voicing. But we don't rely on infrequent bolts of inspiration. Instead, we follow a structured, analytical approach to the creative process.
+    sectionTextClass: wide
+    image: /images/why-we-work-art-and-design-are-fun-serious-and-useful.png
+-   title: Adapt to change.
+    text: Each client presents his or her own challenges. And as technology, law, and medicine change, so do branding, marketing, and advertising. We're always learning about different techniques and strategies and figuring out how to make them work for legal and medical practices.
+    sectionTextClass: wide
+    image: /images/why-we-work-adapt-to-change.png
+---
+{{#each sections}}
+    {{> aboutSection }}
+{{/each}}
