@@ -1,0 +1,99 @@
+// You only have to do this because you're making sprites its own stylesheet. That makes compass re-run the task in its
+// own sandbox, so the imports you did in other files don't count here.
+@import "compass/utilities";
+
+//.sprite {
+//  display:inline-block;
+//  line-height:1;
+//  position:relative;
+//  vertical-align:middle;
+//  zoom:1;
+//  /**
+//   * So using `.icon` on certain elements doesn’t make a visual difference.
+//   */
+//  font-style:normal;
+//  font-weight:normal;
+//  /**
+//   * So icons added using `.icon` sit in the centre of the element.
+//   */
+//  text-align:center;
+//  /**
+//   * The typical size of most icons. Override in your theme stylesheet.
+//   */
+//  width: 16px;
+//  height:16px;
+//  top:-1px;
+//
+//  /*
+//   * H5BP method image replacement:
+//   * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
+//   */
+//  overflow:hidden;
+//  *text-indent:-9999px;
+//
+//  &:before{
+//    content:"";
+//    display:block;
+//    width:0;
+//    height:100%;
+//  }
+//}
+
+
+//$ignite-sprite-map: sprite-map("sprites/ignite/*.png");
+//
+//.athing {
+//  background: $ignite-sprite-map;
+//}
+
+// sprite class should:
+  // - have text indentation
+  // - have display: block (or anything with settable height/width)
+// sprite--specific class should:
+  // - be the same size as the sprite
+
+.sprite {
+  display: block;
+  text-indent: -9999px;
+}
+
+$sprite-dir: "sprites";
+
+@function sprite-path($sprite-basename) {
+  @return $sprite-dir + "/" + $sprite-basename + "/*.png";
+}
+
+@function base-sprite-height($sprite-basename) {
+  $map: sprite-map(sprite-path($sprite-basename));
+  $file: sprite-file($map, $sprite-basename);
+  @return image-height($file);
+}
+
+@function base-sprite-width($sprite-basename) {
+  $map: sprite-map(sprite-path($sprite-basename));
+  $file: sprite-file($map, $sprite-basename);
+  @return image-width($file);
+}
+
+// Look for magic selectors: _active, _target, _hover
+@mixin include-sprite($sprite-basename) {
+  $map: sprite-map(sprite-path($sprite-basename));
+  background: $map;
+  @include sprite-dimensions($map, $sprite-basename);
+}
+
+.a-thing {
+  @include include-sprite("ignite");
+}
+
+.another-thing {
+  $foo: "ignite";
+  @include include-sprite(#{$foo});
+}
+
+@import "sprites/ignite/*.png";
+.sprite--ignite {
+  @include ignite-sprite(ignite);
+  width: 169px;
+  height: 50px;
+}

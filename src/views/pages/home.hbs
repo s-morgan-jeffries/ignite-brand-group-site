@@ -1,60 +1,135 @@
 ---
 layout: standard_layout.hbs
 inlineScripts: ["scripts/contactForm.js"]
-bodyClasses:
-- secret-garden
 ---
-<div class="homepage-primary-content">
+<div class="homepage-content">
 
-    <div class="homepage-primary-content-row">
-        <div class="tagline-block">
-            <h1 class="tagline">
-                We make businesses look distinctive.
-            </h1>
+    <div class="homepage-primary-content">
+
+        <div class="homepage-primary-content__row">
+            <div class="tagline-block">
+                <h1 class="tagline-block__tagline">
+                    We make businesses look distinctive.
+                </h1>
+            </div>
+        </div>
+
+        <div class="homepage-primary-content__row">
+            <div class="homepage-content-block homepage-content-block--left">
+                <h1>We work with doctors and lawyers who think outside of the box.</h1>
+                <img src="images/we-work-with-doctors-and-lawyers-who-think-outside-of-the-box.png" alt="We work with doctors and lawyers who think outside of the box."/>
+                <p>
+                    You're a superhero in your industry. We help communicate that, so the need for your services becomes a want.
+                </p>
+            </div>
+        </div>
+
+        <div class="homepage-primary-content__row">
+            <div class="homepage-content-block homepage-content-block--right">
+                <img src="images/build-a-brand-not-just-a-website.png" height="100" border="0" alt="Build a brand, not just a website."/>
+                <h1>Build a brand, not just a website.</h1>
+                <p>
+                    Make the human connection needed to get not just any old client, but the right client.
+                    <a href="/services/what-we-do.html">Our services</a> include logo and web design, video and image
+                    production, copywriting, pay-per-click advertising, mobile apps,
+                    <a href="what-we-do.html">and more</a>.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="homepage-primary-content-row">
-        <div class="outside-the-box-block">
-            <h1>We work with doctors and lawyers who think outside of the box.</h1>
-            <img class="outside-the-box-img" src="images/we-work-with-doctors-and-lawyers-who-think-outside-of-the-box.png" alt="We work with doctors and lawyers who think outside of the box."/>
-            <p>
-                You're a superhero in your industry. We help communicate that, so the need for your services becomes a want.
-            </p>
+    {{!-- Links section --}}
+    <section class="homepage-links-section">
+        <div class="homepage-links-content">
+            <div class="homepage-links-link">
+                <a href="/services/portfolio.html" class="sprite sprite--portfolio">Portfolio</a>
+                <h3><a href="/services/portfolio.html">Portfolio</a></h3>
+            </div>
+            <div class="homepage-links-link">
+                <a href="/services/what-we-do.html" class="sprite sprite--services">Services</a>
+                <h3><a href="/services/what-we-do.html">Services</a></h3>
+            </div>
+            <div class="homepage-links-link">
+                <a href="http://www.talkingoranges.com/" target="blank" class="sprite sprite--oranges">Talking Oranges</a>
+                <h3><a href="http://www.talkingoranges.com/" target="blank">Talking Oranges</a></h3>
+            </div>
         </div>
-    </div>
-
-    <div class="homepage-primary-content-row">
-        <div class="build-a-brand-block">
-            <img src="images/build-a-brand-not-just-a-website.png" height="100" border="0" alt="Build a brand, not just a website."/>
-            <h1>Build a brand, not just a website.</h1>
-            <p>
-                Make the human connection needed to get not just any old client, but the right client.
-                <a href="what-we-do.html">Our services</a> include logo and web design, video and image
-                production, copywriting, pay-per-click advertising, mobile apps,
-                <a href="what-we-do.html">and more</a>.
-            </p>
-        </div>
-    </div>
+    </section>
 </div>
 
-{{!-- Links section --}}
-<section class="homepage-links-section">
-    <div class="homepage-links-content">
-        <div class="homepage-links-link">
-            <a href="/services/portfolio.html" class="sprite sprite--home sprite--portfolio-home">Portfolio</a>
-            <h3><a href="/services/portfolio.html">Portfolio</a></h3>
-        </div>
-        <div class="homepage-links-link">
-            <a href="/services/what-we-do.html" class="sprite sprite--home sprite--services-home">Services</a>
-            <h3><a href="/services/what-we-do.html">Services</a></h3>
-        </div>
-        <div class="homepage-links-link">
-            <a href="http://www.talkingoranges.com/" target="blank" class="sprite sprite--home sprite--oranges-home">Talking Oranges</a>
-            <h3><a href="http://www.talkingoranges.com/" target="blank">Talking Oranges</a></h3>
-        </div>
-    </div>
-</section>
-
 {{!-- Contact form (sufficiently complicated to refactor into its own partial) --}}
-{{> contact_form }}
+{{!--{{> contact_form }}--}}
+<section class="contact-form-section">
+    <header class="contact-form-header">
+        <h1>Like some orange with your branding?</h1>
+        <p>Tell us what you need using the form below - or give us a call at 646.237.6931.</p>
+    </header>
+
+    <form action="//forms.brace.io/{{contactEmail}}" method="post" class="contact-form" id="contact-us" name="contact-us">
+        {{!--<input type="hidden" name="_next" value="/thanks.html" />--}}
+        {{!--<form action="http://getsimpleform.com/messages?form_api_token=5c357c1e133bd03e59eeb2cd912a4df2" method="post" id="contact-us" name="contact-us">--}}
+        <div class="contact-form__row">
+            <div class="contact-form__left-col">
+                <label for="contact-form-name" class="contact-form__label">
+                    NAME*:
+                    <input type="text" class="contact-form__input" name="name" id="contact-form-name" />
+                </label>
+            </div>
+
+            <div class="contact-form__right-col">
+                <label for="contact-form-help" class="contact-form__label">
+                    HOW CAN WE HELP?*:
+                    <select name="help" class="contact-form__input" id="contact-form-help">
+                        <option value='I need a website.'>I need a website.</option>
+                        <option value='I need a logo.'>I need a logo.</option>
+                        <option value='I need a business name.'>I need a business name.</option>
+                        <option value='I need a photos.'>I need a photos.</option>
+                        <option value='I need a video.'>I need a video.</option>
+                        <option value='I need a copywriter'>I need a copywriter</option>
+                        <option value='I need to make my business easier to find online.'>I need to make my business easier to find online.</option>
+                        <option value='I need an online questionnaire/survey.'>I need an online questionnaire/survey.</option>
+                        <option value='I need an online appointment booking system.'>I need an online appointment booking system.</option>
+                        <option value='I need a mobile app.'>I need a mobile app.</option>
+                        <option value='I need a Google AdWords campaigns.'>I need a Google AdWords campaigns.</option>
+                        <option value="I'm a doctor and need to manage my online reputation.">I'm a doctor and need to manage my online reputation.</option>
+                        <option value='I need advice on my digital branding.'>I need advice on my digital branding.</option>
+                        <option value='I need paper collateral.'>I need paper collateral.</option>
+                        <option value='I need something else.'>I need something else.</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="contact-form__row">
+            <div class="contact-form__left-col">
+                <label for="contact-form-email" class="contact-form__label">
+                    EMAIL*:
+                    <input type="text" class="contact-form__input" name="_replyto" id="contact-form-email" />
+                </label>
+            </div>
+
+            <div class="contact-form__right-col">
+                <label for="contact-form-phone" class="contact-form__label">
+                    PHONE*:
+                    <input type="text" class="contact-form__input" name="phone" id="contact-form-phone" />
+                </label>
+            </div>
+        </div>
+
+
+        <div class="contact-form__row">
+            <label for="contact-form-message" class="contact-form__label">
+                MESSAGE:
+                <textarea class="contact-form__input contact-form__input--textarea" id="contact-form-message" name="message"></textarea>
+            </label>
+        </div>
+
+        <button class="contact-form__submit" type="submit">
+            Send
+            <!-- t0d0: make this a background image -->
+            {{!--<img src="/images/send.png"/>--}}
+
+        </button>
+    </form>
+</section>

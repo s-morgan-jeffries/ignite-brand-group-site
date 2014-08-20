@@ -7,7 +7,8 @@
     "jquery": "~1.11.0",
     "inuit.css": "~5.0.1",
     "facebox": "*",
-    "jcarousel": "~0.3.1"
+    "bootstrap-stylus": "~3.2.0",
+    "bootstrap-hover-dropdown": "~2.0.11"
   },
   "devDependencies": {
     "sinonjs": "~1.10.2",

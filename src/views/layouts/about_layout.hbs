@@ -1,37 +1,25 @@
 ---
 layout: standard_layout.hbs
 aboutTabs:
--   text: Work With Us
-    url: work-with-us
--   text: What We Believe
-    url: what-we-believe
--   text: Why We Work
-    url: why-we-work
 -   text: Who We Are
-    url: who-we-are
+    url: /about/who-we-are.html
+-   text: Why We Work
+    url: /about/why-we-work.html
+-   text: What We Believe
+    url: /about/what-we-believe.html
+-   text: Work With Us
+    url: /about/work-with-us.html
 ---
-
 <div class="about-content">
 
     <h1 class="about-header">
-        <a class="highlight" href="/services/what-we-do.html">
-            {{header.title}}
-        </a>
+        {{header.title}}
     </h1>
 
     {{!--tabs--}}
-    <nav class="about-nav">
-        <ul class="about-nav-tabs">
-            {{#each aboutTabs}}
-                <li>
-                    <a href="/about/{{this.url}}.html" class="about-nav-tab">{{this.text}}</a>
-                </li>
-            {{/each}}
-        </ul>
-    </nav>
+    {{>tabs aboutTabs}}
 
-    <div class="about-banner">
-        <img src="{{header.image}}">
+    <div class="about-banner about-banner--{{header.bannerName}}">
         {{#if header.inset}}
             <div class="about-banner-inset">
                 <h1>{{{header.inset.title}}}</h1>
@@ -43,51 +31,5 @@ aboutTabs:
     </div>
 
     {{> body }}
+
 </div>
-
-<style>
-    .about-content {
-        width: 1000px;
-        margin: 0 auto;
-    }
-    .about-banner {
-        position: relative;
-    }
-    .about-banner-inset {
-        background-color: #FFFFFF;
-        width: 260px;
-        position: absolute;
-        bottom: 135px;
-        left: 45px;
-        padding: 20px 20px;
-    }
-
-    .about-nav {
-        display: block;
-        margin-bottom: 10px;
-    }
-    .about-nav:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .about-nav-tabs {
-        list-style: none;
-    }
-    .about-nav-tab {
-        display: block;
-        width: 130px;
-        height: 30px;
-        margin-left: 2px;
-        float: right;
-        border: 1px solid grey;
-        text-align: center;
-        vertical-align: middle;
-        font-family: 'gill sans', verdana;
-        font-weight: bolder;
-    }
-    .about-nav-tab:hover {
-        text-decoration: none;
-        background-color: #808080;
-    }
-</style>

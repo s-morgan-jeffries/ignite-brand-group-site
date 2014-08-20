@@ -1,0 +1,132 @@
+// Styles for the homepage
+.secret-garden {
+  background-image: url("../../images/the-secret-garden-orange-edition.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.homepage-primary-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+.homepage-primary-content-row {
+  width: 100%;
+  margin-bottom: 100px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.homepage-primary-content-row:first-child {
+  margin-top: 100px;
+}
+.tagline-block {
+  background-color: rgba(255, 104, 0, 0.88);
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  display: table;
+}
+.tagline {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-family: geneva, tahoma, 'trebuchet ms';
+  color: #FFFFFF;
+  font-size: 48px;
+}
+.outside-the-box-block {
+  width: 600px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  text-align: left;
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+.outside-the-box-img {
+  float: left;
+  padding-right: 20px;
+  height: 100px;
+}
+.build-a-brand-block {
+  width: 600px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  text-align: right;
+  float: right;
+}
+.homepage-links-section {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.homepage-links-content {
+  width: 1000px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.homepage-links-link {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+}
+
+// Styles for the contact form
+.contact-form-section {
+  background-color: #e7e7e4;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.contact-form-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contact-form {
+  width: 736px;
+  margin: 0 auto;
+}
+.contact-form__row {
+  text-align: left;
+  margin-bottom: 5px;
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+.contact-form__left-col {
+  width: 47%;
+  float: left;
+}
+.contact-form__right-col {
+  width: 47%;
+  float: right;
+}
+.contact-form__label {
+  font-family: 'gill sans', verdana;
+  font-size: 19px;
+  color: #F96503;
+}
+.contact-form__input {
+  width: 100%;
+}
+.contact-form__input--textarea {
+  height:90px;
+}
+.contact-form__submit {
+  display: block;
+  height: 40px;
+  width: 90px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}

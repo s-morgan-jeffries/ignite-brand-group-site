@@ -1,24 +1,9 @@
 <section class="about-section">
-    <div class="about-section-text about-section-text--{{sectionTextClass}}">
+    <div class="about-section__text about-section__text--{{sectionTextClass}}">
         <header>
-            <h1>{{{title}}}</h1>
+            <h1 class="about-section__title">{{{title}}}</h1>
         </header>
         <p>{{{text}}}</p>
     </div>
-    <img class="about-section-image" src="{{image}}">
+    <img class="about-section__image" src="{{image}}">
 </section>
-
-<style>
-    .about-section-text {
-        display: inline-block;
-    }
-    .about-section-text--wide {
-        width: 650px;
-    }
-    .about-section-text--narrow {
-        width: 475px;
-    }
-    .about-section-image {
-        display: inline-block;
-    }
-</style>

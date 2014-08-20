@@ -1,65 +1,210 @@
 <header class="site-header">
-    <div class="site-header__inner">
-        <div class="site-logo">
-            <a href="/home.html" class="sprite sprite--logo">Ignite Brand Group</a>
-        </div>
-
-        <nav class="site-nav">
-            <ul class="site-nav__links">
-                <li class="site-nav__link site-nav__link--text">
-                    <a href="/about/who-we-are.html" data-flexmenu="flexmenu1">ABOUT</a>
-                </li>
-                <li class="site-nav__link site-nav__link--text">
-                    <a href="/services/what-we-do.html" data-flexmenu="flexmenu2">SERVICES</a>
-                </li>
-                <li class="site-nav__link site-nav__link--text">
-                    <a href="/news.html">NEWS</a>
-                </li>
-                <li class="site-nav__link site-nav__link--text">
-                    <a href="http://www.talkingoranges.com/" target="blank">BLOG</a>
-                </li>
-                <li class="site-nav__link site-nav__link--text">
-                    <a href="/faq.html">FAQ</a>
-                </li>
-                <li class="site-nav__link site-nav__link--text">
-                    <a href="/contact-us.html">CONTACT US</a>
-                </li>
-                <li class="site-nav__link site-nav__link--icon">
-                    <a href="/search.html" rel="facebox" class="sprite sprite--navbar sprite--search-nav">Search</a>
-                </li>
-                <li class="site-nav__link site-nav__link--icon">
-                    <a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--navbar sprite--linkedin-nav">LinkedIn</a>
-                </li>
-                <li class="site-nav__link site-nav__link--icon">
-                    <a href="https://twitter.com/ignitebrand" target="blank" class="sprite sprite--navbar sprite--twitter-nav"></a>
-                </li>
-                <li class="site-nav__link site-nav__link--icon">
-                    <a href="http://www.youtube.com/user/IgniteBrandGroup" target="blank" class="sprite sprite--navbar sprite--youtube-nav"></a>
-                </li>
-                <li class="site-nav__link site-nav__link--icon">
-                    <a href="https://www.facebook.com/IgniteBrandGroup" target="blank" class="sprite sprite--navbar sprite--facebook-nav">Facebook</a>
-                </li>
-                <li class="site-nav__link site-nav__link--icon">
-                    <a href="http://www.insidestartups.org/ignite-brand-group-llc" target="blank" class="sprite sprite--navbar sprite--insidestartups-nav"></a>
-                </li>
-            </ul>
-
-            <!--HTML FOR ABOUT DROPDOWN MENU-->
-            <ul id="flexmenu1" class="flexdropdownmenu">
-                <li><a href="/about/who-we-are.html">WHO WE ARE</a></li>
-                <li><a href="/about/why-we-work.html">WHY WE WORK</a></li>
-                <li><a href="/about/what-we-believe.html">WHAT WE BELIEVE</a></li>
-                <li><a href="/about/work-with-us.html">WORK WITH US</a></li>
-            </ul>
-            <!--END OF HTML FOR ABOUT DROPDOWN MENU-->
-
-            <!--HTML FOR SERVICES DROPDOWN MENU-->
-            <ul id="flexmenu2" class="flexdropdownmenu">
-                <li><a href="/services/what-we-do.html">WHAT WE DO</a></li>
-                <li><a href="/services/how-we-work.html">HOW WE WORK</a></li>
-                <li><a href="/services/portfolio.html">PORTFOLIO</a></li>
-            </ul>
-            <!--END OF HTML FOR ABOUT DROPDOWN MENU-->
-        </nav>
+    <div class="site-header__logo">
+        <a class="sprite sprite--ignite-logo" href="/home.html">Ignite</a>
     </div>
+    <nav class="site-header__nav">
+        <ul class="site-header__nav-links">
+            <li class="dropdown site-header__text-link">
+                <a href="/about/who-we-are.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">About</a>
+                <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                    <li><a href="/about/who-we-are.html">Who We Are</a></li>
+                    <li><a href="/about/why-we-work.html">Why We Work</a></li>
+                    <li><a href="/about/what-we-believe.html">What We Believe</a></li>
+                    <li><a href="/about/work-with-us.html">Work With Us</a></li>
+                </ul>
+            </li>
+            <li class="dropdown site-header__text-link">
+                <a href="/services/what-we-do.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                    <li><a href="/services/what-we-do.html">What We Do</a></li>
+                    <li><a href="/services/how-we-work.html">How We Work</a></li>
+                    <li><a href="/services/portfolio.html">Portfolio</a></li>
+                </ul>
+            </li>
+            <li class="site-header__text-link">
+                <a href="/news.html">News</a>
+            </li>
+            <li class="site-header__text-link">
+                <a href="http://www.talkingoranges.com/" target="blank">Blog</a>
+            </li>
+            <li class="site-header__text-link">
+                <a href="/faq.html">FAQ</a>
+            </li>
+            <li class="site-header__text-link">
+                <a href="/contact-us.html">Contact Us</a>
+            </li>
+            <li class="site-header__sprite-link">
+                <a href="#" class="sprite sprite--search-sitenav">Search</a>
+            </li>
+            <li class="site-header__sprite-link">
+                <a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--linkedin-sitenav">LinkedIn</a>
+            </li>
+            <li class="site-header__sprite-link">
+                <a href="https://twitter.com/ignitebrand" target="blank" class="sprite sprite--twitter-sitenav">Twitter</a>
+            </li>
+            <li class="site-header__sprite-link">
+                <a href="http://www.youtube.com/user/IgniteBrandGroup" target="blank" class="sprite sprite--youtube-sitenav">YouTube</a>
+            </li>
+            <li class="site-header__sprite-link">
+                <a href="https://www.facebook.com/IgniteBrandGroup" target="blank" class="sprite sprite--facebook-sitenav">Facebook</a>
+            </li>
+            <li class="site-header__sprite-link">
+                <a href="http://www.insidestartups.org/ignite-brand-group-llc" target="blank" class="sprite sprite--insidestartups-sitenav">InsideStartups</a>
+            </li>
+        </ul>
+    </nav>
 </header>
+
+{{!--<header class="site-header">--}}
+    {{!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">--}}
+        {{!--<div class="container">--}}
+            {{!--<!-- Brand and toggle get grouped for better mobile display -->--}}
+            {{!--<div class="navbar-header">--}}
+                {{!--This floats left--}}
+                {{!--<a class="navbar-brand sprite sprite--ignite" href="#">Ignite</a>--}}
+                {{!--<a class="navbar-brand sprite--ignite" href="#">Ignite</a>--}}
+                {{!--<div class="vertical-align-container">--}}
+                {{!--<div class="vertical-centering-container vertical-centering-container--navbar pull-left">--}}
+                {{!--<div class="vertical-centering-container vertical-centering-container--navbar navbar-brand-logo">--}}
+                    {{!--<a class="sprite sprite--ignite-logo vertically-centered" href="#">Ignite</a>--}}
+                {{!--</div>--}}
+                {{!--</div>--}}
+                {{!--This floats right--}}
+                {{!--Uses HTML5 data attributes to store data--}}
+                {{!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">--}}
+                    {{!--<span class="sr-only">Toggle navigation</span>--}}
+                    {{!--<span class="icon-bar"></span>--}}
+                    {{!--<span class="icon-bar"></span>--}}
+                    {{!--<span class="icon-bar"></span>--}}
+                {{!--</button>--}}
+            {{!--</div>--}}
+
+            {{!--<!-- Collect the nav links, forms, and other content for toggling -->--}}
+            {{!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">--}}
+                {{!--<ul class="nav navbar-nav navbar-right">--}}
+                    {{!--<li><a href="#">Link 3</a></li>--}}
+                    {{!--<li class="dropdown vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>--}}
+                        {{!--<a href="#" class="dropdown-toggle vertically-centered" data-hover="dropdown" data-toggle="dropdown">About</a>--}}
+                        {{!--<ul class="dropdown-menu dropdown-menu-left" role="menu">--}}
+                            {{!--<li><a href="/about/who-we-are.html">Who We Are</a></li>--}}
+                            {{!--<li class="divider"></li>--}}
+                            {{!--<li><a href="/about/why-we-work.html">Why We Work</a></li>--}}
+                            {{!--<li class="divider"></li>--}}
+                            {{!--<li><a href="/about/what-we-believe.html">What We Believe</a></li>--}}
+                            {{!--<li class="divider"></li>--}}
+                            {{!--<li><a href="/about/work-with-us.html">Work With Us</a></li>--}}
+                        {{!--</ul>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="dropdown vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>--}}
+                        {{!--<a href="#" class="dropdown-toggle vertically-centered" data-hover="dropdown" data-toggle="dropdown">Services</a>--}}
+                        {{!--<ul class="dropdown-menu dropdown-menu-left" role="menu">--}}
+                            {{!--<li><a href="/services/what-we-do.html">What We Do</a></li>--}}
+                            {{!--<li class="divider"></li>--}}
+                            {{!--<li><a href="/services/how-we-work.html">How We Work</a></li>--}}
+                            {{!--<li class="divider"></li>--}}
+                            {{!--<li><a href="/services/portfolio.html">Portfolio</a></li>--}}
+                        {{!--</ul>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="/news.html" class="vertically-centered">News</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="http://www.talkingoranges.com/" target="blank" class="vertically-centered">Blog</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="/faq.html" class="vertically-centered">FAQ</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="/contact-us.html" class="vertically-centered">Contact Us</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="#" class="sprite sprite--search-sitenav vertically-centered">Search</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--linkedin-sitenav vertically-centered">LinkedIn</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--twitter-sitenav vertically-centered">Twitter</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--youtube-sitenav vertically-centered">YouTube</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--facebook-sitenav vertically-centered">Facebook</a>--}}
+                    {{!--</li>--}}
+                    {{!--<li class="vertical-centering-container vertical-centering-container--navbar">--}}
+                        {{!--<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--insidestartups-sitenav vertically-centered">InsideStartups</a>--}}
+                    {{!--</li>--}}
+                {{!--</ul>--}}
+            {{!--</div><!-- /.navbar-collapse -->--}}
+        {{!--</div><!-- /.container-fluid -->--}}
+    {{!--</nav>--}}
+{{!--</header>--}}
+
+{{!--<header class="site-header">--}}
+    {{!--<div class="site-header__inner">--}}
+        {{!--<div class="site-logo">--}}
+            {{!--<a href="/home.html" class="sprite sprite--logo">Ignite Brand Group</a>--}}
+        {{!--</div>--}}
+
+        {{!--<nav class="site-nav">--}}
+            {{!--<ul class="site-nav__links">--}}
+                {{!--<li class="site-nav__link site-nav__link--text">--}}
+                    {{!--<a href="/about/who-we-are.html" data-flexmenu="flexmenu1">ABOUT</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--text">--}}
+                    {{!--<a href="/services/what-we-do.html" data-flexmenu="flexmenu2">SERVICES</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--text">--}}
+                    {{!--<a href="/news.html">NEWS</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--text">--}}
+                    {{!--<a href="http://www.talkingoranges.com/" target="blank">BLOG</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--text">--}}
+                    {{!--<a href="/faq.html">FAQ</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--text">--}}
+                    {{!--<a href="/contact-us.html">CONTACT US</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--icon">--}}
+                    {{!--<a href="/search.html" rel="facebox" class="sprite sprite--navbar sprite--search-nav">Search</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--icon">--}}
+                    {{!--<a href="http://www.linkedin.com/company/ignite-brand-group" target="blank" class="sprite sprite--navbar sprite--linkedin-nav">LinkedIn</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--icon">--}}
+                    {{!--<a href="https://twitter.com/ignitebrand" target="blank" class="sprite sprite--navbar sprite--twitter-nav"></a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--icon">--}}
+                    {{!--<a href="http://www.youtube.com/user/IgniteBrandGroup" target="blank" class="sprite sprite--navbar sprite--youtube-nav"></a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--icon">--}}
+                    {{!--<a href="https://www.facebook.com/IgniteBrandGroup" target="blank" class="sprite sprite--navbar sprite--facebook-nav">Facebook</a>--}}
+                {{!--</li>--}}
+                {{!--<li class="site-nav__link site-nav__link--icon">--}}
+                    {{!--<a href="http://www.insidestartups.org/ignite-brand-group-llc" target="blank" class="sprite sprite--navbar sprite--insidestartups-nav"></a>--}}
+                {{!--</li>--}}
+            {{!--</ul>--}}
+
+            {{!--<!--HTML FOR ABOUT DROPDOWN MENU-->--}}
+            {{!--<ul id="flexmenu1" class="flexdropdownmenu">--}}
+                {{!--<li><a href="/about/who-we-are.html">WHO WE ARE</a></li>--}}
+                {{!--<li><a href="/about/why-we-work.html">WHY WE WORK</a></li>--}}
+                {{!--<li><a href="/about/what-we-believe.html">WHAT WE BELIEVE</a></li>--}}
+                {{!--<li><a href="/about/work-with-us.html">WORK WITH US</a></li>--}}
+            {{!--</ul>--}}
+            {{!--<!--END OF HTML FOR ABOUT DROPDOWN MENU-->--}}
+
+            {{!--<!--HTML FOR SERVICES DROPDOWN MENU-->--}}
+            {{!--<ul id="flexmenu2" class="flexdropdownmenu">--}}
+                {{!--<li><a href="/services/what-we-do.html">WHAT WE DO</a></li>--}}
+                {{!--<li><a href="/services/how-we-work.html">HOW WE WORK</a></li>--}}
+                {{!--<li><a href="/services/portfolio.html">PORTFOLIO</a></li>--}}
+            {{!--</ul>--}}
+            {{!--<!--END OF HTML FOR ABOUT DROPDOWN MENU-->--}}
+        {{!--</nav>--}}
+    {{!--</div>--}}
+{{!--</header>--}}

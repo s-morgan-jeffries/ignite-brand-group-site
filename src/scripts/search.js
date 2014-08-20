@@ -16,7 +16,7 @@
   // doesn't exist yet.
   var configureSearch = function () {
     var swiftypeKey = '7tzN3t4DExDi-NZ8Hy1f';
-    console.log('configuring search');
+//    console.log('configuring search');
 
     $('#st-search-input').swiftype({
       engineKey: swiftypeKey

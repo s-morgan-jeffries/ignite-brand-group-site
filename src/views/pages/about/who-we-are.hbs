@@ -3,7 +3,7 @@ layout: about_layout.hbs
 pageTitle: Who We Are
 header:
     title: About
-    image: /images/banner-who-we-are.jpg
+    bannerName: who-we-are
     inset:
         title: Who We Are
         text: Ignite helps businesses look distinctive - specifically lawyers, doctors, and other professionals who think outside the box. Learn more about us by clicking on the tabs above.
@@ -17,10 +17,46 @@ sections:
     sectionTextClass: narrow
     image: /images/who-we-are-distinguish-yourself.png
 -   title: Let us help.
-    text: We're based in New York City, but have taken on projects from coast to coast. So <a href=\"/contact-us.html\">drop us a line</a>. Let's see what we can do together.
+    text: We're based in New York City, but have taken on projects from coast to coast. So <a href="/contact-us.html">drop us a line</a>. Let's see what we can do together.
     sectionTextClass: narrow
     image: /images/who-we-are-let-us-help.png
 ---
 {{#each sections}}
     {{> aboutSection }}
 {{/each}}
+
+{{!--<div class="box1" id="box1">--}}
+    {{!--<div class="box2" id="box2">--}}
+        {{!--<div class="box3"></div>--}}
+    {{!--</div>--}}
+{{!--</div>--}}
+
+{{!--<style>--}}
+    {{!--.box1 {--}}
+        {{!--width: 200px;--}}
+        {{!--height: 200px;--}}
+        {{!--position: absolute;--}}
+        {{!--background-color: red;--}}
+    {{!--}--}}
+    {{!--.box2 {--}}
+        {{!--width: 100px;--}}
+        {{!--height: 100px;--}}
+        {{!--position: relative;--}}
+        {{!--top: 50px;--}}
+        {{!--left: 50px;--}}
+        {{!--/*color: green;*/--}}
+    {{!--}--}}
+    {{!--#box1 .box2 {--}}
+        {{!--background-color: green;--}}
+        {{!--color: #ff00ff;--}}
+    {{!--}--}}
+    {{!--.box3 {--}}
+        {{!--background-color: blue;--}}
+        {{!--position: relative;--}}
+        {{!--width: 50px;--}}
+        {{!--height: 50px;--}}
+        {{!--top: 25px;--}}
+        {{!--left: 25px;--}}
+        {{!--color: #ffff00;--}}
+    {{!--}--}}
+{{!--</style>--}}

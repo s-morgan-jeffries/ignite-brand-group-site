@@ -1,0 +1,39 @@
+@import 'sprite_map'
+
+// Single mixin that uses mixins from sprite_map
+noBackgroundSprite($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+  spritePosition($sprite)
+
+$sprite_img_file ?= '/images/sprite.png'
+$pseudo-selectors = 'hover'
+
+.sprite
+  display inline-block
+  background url($sprite_img_file) no-repeat
+  text-indent -9999px
+  line-height 0
+  vertical-align bottom
+  .nav &
+    display inline-block
+
+/* Loop through all the sprites */
+for $sprite_name in $sprite_map
+  /*Check to see if this is a sprite for a pseudo-selector*/
+  $is-pseudo = false
+  for $pseudo-selector in $pseudo-selectors
+    $selector-regex = '_' + $pseudo-selector + '$'
+    $is-pseudo = $is-pseudo || match($selector-regex, $sprite_name)
+  /*If it's not, make a class out of the sprite's name*/
+  unless $is-pseudo
+    $sprite_info = $sprite_map[$sprite_name]
+    .sprite--{$sprite_name}
+      noBackgroundSprite($sprite_info)
+      /*Now loop through all the pseudo-selectors and see if there's a version of the sprite for that selector*/
+      for $pseudo-selector in $pseudo-selectors
+        $sprite_pseudo_info = $sprite_map[$sprite_name + '_' + $pseudo-selector]
+        /*If there is, make a new rule for it*/
+        if $sprite_pseudo_info
+          &:{$pseudo-selector}
+            noBackgroundSprite($sprite_pseudo_info)

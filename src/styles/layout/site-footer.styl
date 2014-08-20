@@ -1,0 +1,39 @@
+$site-footer-bg-color = $white
+$site-footer-color = $dark-gray
+$site-footer-content-width = 1000px
+$site-footer-block1-width = 555px
+$site-footer-block2-width = 335px
+$site-footer-block3-width = 100px
+
+.site-footer
+  background-color $site-footer-bg-color
+  height 100px
+  width 100%
+
+.site-footer-content
+  height 100%
+  width $site-footer-content-width
+  margin 0 auto
+  display table
+
+.site-footer-content__row
+  display table-cell
+  vertical-align middle
+
+.site-footer-text
+  display inline-block
+  font-family $gill-sans
+  font-size 13px
+  line-height normal
+  &
+  &>a
+    color $site-footer-color
+
+.site-footer-text--block1
+  width $site-footer-block1-width
+
+.site-footer-text--block2
+  width $site-footer-block2-width
+
+.site-footer-text--block3
+  width $site-footer-block3-width

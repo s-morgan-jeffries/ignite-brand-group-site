@@ -60,7 +60,7 @@ module.exports = function (grunt) {
 //          layout: 'standard_layout.hbs'
 //        },
         expand: true,
-        cwd: '<%= yeoman.src %>/views/static',
+        cwd: '<%= yeoman.src %>/views/pages',
         src: [
           './**/*.hbs'
         ],
@@ -124,39 +124,42 @@ module.exports = function (grunt) {
       server: '<%= yeoman.temp %>'
     },
 
-    compass: {
-      options: {
-        sassDir: '<%= yeoman.src %>/styles',
-        cssDir: '<%= yeoman.src %>/styles',
-        generatedImagesDir: '<%= yeoman.temp %>/images/generated',
-        imagesDir: '<%= yeoman.src %>/images',
-        javascriptsDir: '<%= yeoman.src %>/scripts',
-        fontsDir: '<%= yeoman.src %>/styles/fonts',
-        importPath: '<%= yeoman.src %>/bower_components',
-        httpImagesPath: '/images',
-        httpGeneratedImagesPath: '/images/generated',
-        httpFontsPath: '/styles/fonts',
-        relativeAssets: false
-      },
-      build: {},
-      server: {
-        options: {
-          debugInfo: true
-        }
-      }
-    },
+//    compass: {
+//      options: {
+////        config: '<%= yeoman.src %>/styles/compass',
+//        importPath: ['<%= yeoman.src %>/bower_components'],
+//        require: [],
+//        sassDir: '<%= yeoman.src %>/styles',
+//        cssDir: '<%= yeoman.src %>/styles',
+//        imagesDir: '<%= yeoman.src %>/images',
+////        spriteLoadPath: '<%= yeoman.src %>/images/sprites',
+//        generatedImagesDir: '<%= yeoman.temp %>/images/generated',
+//        javascriptsDir: '<%= yeoman.src %>/scripts',
+//        fontsDir: '<%= yeoman.src %>/styles/fonts',
+//        httpImagesPath: '/images',
+//        httpGeneratedImagesPath: '/images/generated',
+//        httpFontsPath: '/styles/fonts',
+//        relativeAssets: false
+//      },
+//      build: {},
+//      server: {
+//        options: {
+//          debugInfo: true
+//        }
+//      }
+//    },
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-        'compass:server',
+        'stylus:server',
         'copy:scripts'
       ],
       test: [
-        'compass:build'
+        'stylus:build'
       ],
       build: [
-        'compass:build',
+        'stylus:build',
         'imagemin',
         'svgmin'
       ]
@@ -167,7 +170,7 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       develop: {
         options: {
@@ -484,6 +487,124 @@ module.exports = function (grunt) {
       }
     },
 
+    'sprite': {
+      'all': {
+        // Sprite files to read in
+        'src': ['<%= yeoman.src %>/images/sprites/**/*.png'],
+
+        // Location to output spritesheet
+        'destImg': '<%= yeoman.src %>/images/sprite.png',
+
+        // Stylus with variables under sprite names
+        'destCSS': '<%= yeoman.src %>/styles/components/sprite_map.styl',
+
+        // OPTIONAL: Manual override for imgPath specified in CSS
+//        'imgPath': '../sprite.png',
+
+        // OPTIONAL: Specify algorithm (top-down, left-right, diagonal [\ format],
+        // alt-diagonal [/ format], binary-tree [best packing])
+        // Visual representations can be found below
+//        'algorithm': 'alt-diagonal',
+
+        // OPTIONAL: Specify padding between images
+//        'padding': 2,
+
+        // OPTIONAL: Specify engine (auto, phantomjs, canvas, gm, pngsmith)
+//        'engine': 'canvas',
+
+        // OPTIONAL: Specify CSS format (inferred from destCSS' extension by default)
+        // (stylus, scss, scss_maps, sass, less, json, json_array, css)
+//        'cssFormat': 'json',
+
+        // OPTIONAL: Specify a function or Mustache template to use for rendering destCSS
+        // Mutually exclusive to cssFormat
+        // More information can be found below
+        'cssTemplate': 'lib/sprite_positions.styl.mustache'
+
+        // OPTIONAL: Map variable of each sprite
+//        'cssVarMap': function (sprite) {
+//          // `sprite` has `name`, `image` (full path), `x`, `y`
+//          //   `width`, `height`, `total_width`, `total_height`
+//          // EXAMPLE: Prefix all sprite names with 'sprite-'
+//          sprite.name = 'sprite-' + sprite.name;
+//        },
+
+        // OPTIONAL: Specify settings for algorithm
+//        'algorithmOpts': {
+//          // Skip sorting of images for algorithm (useful for sprite animations)
+//          'sort': false
+//        },
+
+        // OPTIONAL: Specify settings for engine
+//        'engineOpts': {
+//          'imagemagick': true
+//        },
+
+        // OPTIONAL: Specify img options
+//        'imgOpts': {
+//          // Format of the image (inferred from destImg' extension by default) (jpg, png)
+//          'format': 'png',
+//
+//          // gm only: Quality of image
+//          'quality': 90,
+//
+//          // phantomjs only: Milliseconds to wait before terminating PhantomJS script
+//          'timeout': 10000
+//        },
+
+        // OPTIONAL: Specify css options
+//        'cssOpts': {
+//          // Some templates allow for skipping of function declarations
+//          'functions': false,
+//
+//          // CSS template allows for overriding of CSS selectors
+//          'cssClass': function (item) {
+//            return '.sprite-' + item.name;
+//          }
+//        }
+      }
+    },
+
+    stylus: {
+      options: {
+        paths: [
+          '<%= yeoman.src %>/styles',
+          '<%= yeoman.src %>/bower_components',
+          'node_modules'
+        ]
+//          urlfunc: 'embedurl', // use embedurl('test.png') in our code to trigger Data URI embedding
+//          use: [
+//            function () {
+//              return testPlugin('yep'); // plugin with options
+//            },
+//            require('fluidity') // use stylus plugin at compile time
+//          ]
+//          ,
+//          import: [      //  @import 'foo', 'bar/moo', etc. into every .styl file
+//            'foo',       //  that is compiled. These might be findable based on values you gave
+//            'bar/moo'    //  to `paths`, or a plugin you added under `use`
+//          ]
+      },
+      server: {
+        options: {
+          compress: false,
+          linenos: true
+        },
+        files: {
+          '<%= yeoman.src %>/styles/style.css': ['<%= yeoman.src %>/styles/style.styl']
+        }
+      },
+      build: {
+        options: {
+          compress: false,
+          linenos: false
+        },
+        files: {
+          '<%= yeoman.src %>/styles/style.css': ['<%= yeoman.src %>/styles/style.styl']
+        }
+      }
+    },
+
     svgmin: {
       build: {
         files: [{
@@ -568,10 +689,10 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
-      sass: {
-        files: ['<%= yeoman.src %>/styles/{,*/}*.{scss,sass}'],
+      stylus: {
+        files: ['<%= yeoman.src %>/styles/{,*/}*.styl'],
 //        tasks: ['sass:server', 'autoprefixer'],
-        tasks: ['compass:server', 'autoprefixer'],
+        tasks: ['stylus:server', 'autoprefixer'],
         options: {
           livereload: true
         }
@@ -606,7 +727,9 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.src %>/views/layouts/base_layout.hbs'],
         exclude: [
           '<%= yeoman.src %>/bower_components/json3/lib/json3.min.js',
-          '<%= yeoman.src %>/bower_components/es5-shim/es5-shim.js'
+          '<%= yeoman.src %>/bower_components/es5-shim/es5-shim.js',
+          '<%= yeoman.src %>/bower_components/bootstrap/',
+          '<%= yeoman.src %>/bower_components/bootstrap-hover-dropdown/'
         ],
         bowerJson: require('./bower.json'),
         directory: '<%= yeoman.src %>/bower_components',

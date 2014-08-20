@@ -1,65 +1,64 @@
 ---
 layout: about_layout.hbs
-jobTitle: <%= _.titleize(_.humanize(jobId)) %>
-pageTitle: <%= jobTitle %> Application
+pageTitle: <%= jobs[jobId].title %> Application
 header:
     title: Work With Us
-    image: /images/banner-work-with-us.jpg
+    bannerName: work-with-us
 ---
-<div class="job-description-container">
-    {{#withProp jobs jobId}}
-        <section>
-            <header>
-                <h1>{{../jobTitle}}</h1>
-            </header>
+<div class="job-application">
+    <div class="job-description">
+        {{#withProp jobs jobId}}
             <section>
-                <header>
-                    <h3>Summary</h3>
+                <header class="job-description__title">
+                    <h1>{{title}}</h1>
                 </header>
-                {{#each summary}}
-                    <p>{{this}}</p>
-                {{/each}}
-            </section>
-            <section>
-                <header>
-                    <h3>Primary Responsibilities</h3>
-                </header>
-                <ul>
-                    {{#each responsibilities}}
-                        <li>{{this}}</li>
+                <section>
+                    <header>
+                        <h3 class="job-description__section-title">Summary</h3>
+                    </header>
+                    {{#each summary}}
+                        <p class="job-description__text">{{{this}}}</p>
                     {{/each}}
-                </ul>
+                </section>
+                <section>
+                    <header>
+                        <h3 class="job-description__section-title">Primary Responsibilities</h3>
+                    </header>
+                    <ul class="job-description__section-list">
+                        {{#each responsibilities}}
+                            <li>{{{this}}}</li>
+                        {{/each}}
+                    </ul>
+                </section>
+                <section>
+                    <header>
+                        <h3 class="job-description__section-title">Desired Qualities</h3>
+                    </header>
+                    <ul class="job-description__section-list">
+                        {{#each qualities}}
+                            <li>{{{this}}}</li>
+                        {{/each}}
+                    </ul>
+                </section>
+                <section>
+                    <header>
+                        <h3 class="job-description__section-title">Desired Qualifications</h3>
+                    </header>
+                    <ul class="job-description__section-list">
+                        {{#each qualifications}}
+                            <li>{{{this}}}</li>
+                        {{/each}}
+                    </ul>
+                </section>
             </section>
-            <section>
-                <header>
-                    <h3>Desired Qualities</h3>
-                </header>
-                <ul>
-                    {{#each qualities}}
-                        <li>{{this}}</li>
-                    {{/each}}
-                </ul>
-            </section>
-            <section>
-                <header>
-                    <h3>Desired Qualifications</h3>
-                </header>
-                <ul>
-                    {{#each qualifications}}
-                        <li>{{this}}</li>
-                    {{/each}}
-                </ul>
-            </section>
-        </section>
-    {{/withProp}}
-    <p>
-        Submit your application through the "Application Form" on the right-hand side of this page. If you have any
-        questions or concerns, contact us at <a href="mailto:info@ignitebrandgroup.com">info@ignitebrandgroup.com</a>.
-    </p>
-</div>
+        {{/withProp}}
+        <p>
+            Submit your application through the "Application Form" on the right-hand side of this page. If you have any
+            questions or concerns, contact us at <a href="mailto:info@ignitebrandgroup.com">info@ignitebrandgroup.com</a>.
+        </p>
+        <a href="/about/work-with-us.html">See other open positions</a>
+    </div>
+    <div class="job-application-form">
 
-<style>
-    .job-description-container {
-        width: 650px;
-    }
-</style>
+    </div>
+</div>

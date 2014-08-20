@@ -1,0 +1,147 @@
+$homepage-background = '/images/banners/banner-homepage.png'
+$homepage-row-separation = 100px
+
+.homepage-content
+  background url(unquote($homepage-background))
+  background-repeat no-repeat
+  background-position center center
+  /*background-size 100% auto*/
+  background-attachment fixed
+  background-size auto 100%
+  +above(1050px)
+    background-size 100% auto
+
+.homepage-primary-content
+  /*position absolute*/
+  width 1000px
+  margin 0 auto
+  padding-top $homepage-row-separation
+
+.homepage-primary-content__row
+  width 100%
+  margin-bottom 100px
+  clearfix()
+
+.tagline-block
+  background-color alpha($orange, 0.88)
+  height 200px
+  width 100%
+  display table
+
+.tagline-block__tagline
+  display table-cell
+  vertical-align middle
+  text-align center
+  color $white
+  font-size 48px
+
+.homepage-content-block
+  width 600px
+  padding 35px 30px
+  background-color $white
+  >h1
+    font-family $gill-sans
+    font-size 37px
+    line-height normal
+    color $orange
+    margin 0 0
+  >p
+    font-size 13px
+    line-height 2
+
+.homepage-content-block--left
+  text-align left
+  clearfix()
+  >img
+    float left
+    height 100px
+    padding-right 20px
+
+.homepage-content-block--right
+  text-align right
+  float right
+
+.homepage-links-section
+  width 100%
+  background-color $white
+
+.homepage-links-content
+  width 1000px
+  padding-top 30px
+  padding-bottom 30px
+  margin 0 auto
+
+.homepage-links-link
+  width 33%
+  text-align center
+  display inline-block
+
+
+// Styles for the contact form
+.contact-form-section
+  background-color $light-gray
+  padding-top 15px
+  padding-bottom 20px
+
+.contact-form-header
+  text-align center
+  margin-bottom 15px
+  >h1
+    color $orange
+    font-family $gill-sans
+    margin 0 0
+    font-size 37px
+  >p
+    font-size 13px
+    line-height 2
+
+.contact-form
+  width 736px
+  margin 0 auto
+
+.contact-form__row
+  text-align left
+  margin-bottom 5px
+  &:last-of-type
+    margin-bottom 15px
+  &:after
+    content: ""
+    display table
+    clear both
+
+.contact-form__left-col
+  width 47%
+  float left
+
+.contact-form__right-col
+  width 47%
+  float right
+
+.contact-form__label
+  font-family $gill-sans
+  font-size 19px
+  font-weight normal
+  color $orange
+  text-transform uppercase
+  width 100%
+
+.contact-form__input
+  width 100%
+  color $dark-gray
+
+.contact-form__input--textarea
+  height 90px
+
+.contact-form__submit
+  font-family $gill-sans
+  font-size 20px
+  font-weight lighter
+  color $white
+  text-transform uppercase
+  background-color $orange
+  display block
+  height 40px
+  width 90px
+  margin 0 auto
+  padding 0
+  border 0

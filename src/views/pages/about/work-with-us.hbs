@@ -3,31 +3,22 @@ layout: about_layout.hbs
 pageTitle: Work With Us
 header:
     title: Work With Us
-    image: /images/banner-work-with-us.jpg
-jobs:
--   title: Verbal Strategist
-    description: Full-Time, New York, NY
-    applicationLink: /
+    bannerName: work-with-us
 ---
-<section class="about-section">
-    <div class="about-section-text">
-        <header>
-            <h1>Open Positions</h1>
-        </header>
-        <p>Like a little orange with your branding? Come work with us. Check out the available positions below, or tell us how you could contribute at <a class="highlight" href="mailto:info@ignitebrandgroup.com">info@ignitebrandgroup.com</a>.</p>
-    </div>
-    <ul>
+<section class="jobs-section">
+    <header class="jobs-section__header">
+        <h1>Open Positions</h1>
+        <p>
+            Like a little orange with your branding? Come work with us. Check out the available positions below, or tell
+            us how you could contribute at <a href="mailto:info@ignitebrandgroup.com">info@ignitebrandgroup.com</a>.
+        </p>
+    </header>
+    <ul class="jobs-section__list">
         {{#each jobs}}
-            <li>
-                <h3><a href="{{applicationLink}}">{{title}}</a></h3>
-                <p>{{description}}</p>
+            <li class="jobs-section__job">
+                <h3 class="jobs-section__job-title"><a href="/jobs/{{@key}}.html">{{title}}</a></h3>
+                <p class="jobs-section__job-description">{{capitalizeEach commitment}}, {{location}}</p>
             </li>
         {{/each}}
     </ul>
 </section>
-
-<style>
-    .about-section-text {
-        display: inline-block;
-    }
-</style>

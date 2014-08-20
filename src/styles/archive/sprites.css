@@ -1,0 +1,35 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/sprites\.scss}line{font-family:\0000355}}
+.sprite {
+  display: block;
+  text-indent: -9999px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/sprites\.scss}line{font-family:\0000385}}
+.a-thing {
+  background: url('/images/generated/sprites/ignite-sdc4378481c.png');
+  height: 50px;
+  width: 169px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/sprites\.scss}line{font-family:\0000389}}
+.another-thing {
+  background: url('/images/generated/sprites/ignite-sdc4378481c.png');
+  height: 50px;
+  width: 169px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/sprites\/ignite\/\*\.png}line{font-family:\0000350}}
+.ignite-sprite, .sprite--ignite {
+  background: url('/images/generated/sprites/ignite-s8796fd28ca.png') no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/Desktop\/development\/websites\/Ignite\/ignite-brand-group\/src\/styles\/sprites\.scss}line{font-family:\0000395}}
+.sprite--ignite {
+  background-position: 0 -50px;
+  width: 169px;
+  height: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Morgan\/\.rvm\/gems\/ruby-2\.1\.0\@ignite-brand-group\/gems\/compass-0\.12\.7\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000343}}
+.sprite--ignite:hover, .sprite--ignite.ignite_hover, .sprite--ignite.ignite-hover {
+  background-position: 0 0;
+}
